@@ -1,1 +1,31 @@
 /* css styles */
+body {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* 📖 Improve readability width */
+main {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* ✨ Subtle typography upgrade */
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+/* 🧩 Softer callouts (less harsh than default darkly) */
+.callout {
+  border-radius: 10px;
+}
+
+/* 🎯 Make links more elegant */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

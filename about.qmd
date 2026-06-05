@@ -2,4 +2,22 @@
 title: "About"
 ---
 
-About this site
+# About Me
+
+I am a student working on **Machine learning techniques for acoustic identification**.
+
+---
+
+## Academic Focus
+
+- Interest area 1  
+- Interest area 2  
+- Methodology focus  
+
+---
+
+## Skills
+
+- Data analysis / coding / research
+- Writing and academic work
+- Tools: Quarto, Python, etc.

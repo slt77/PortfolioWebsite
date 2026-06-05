@@ -16,3 +16,37 @@ Second section
 - 1
 - 2
 - 3
+
+## Dissertation
+
+::: {.callout-note}
+A structured academic investigation into [topic].
+:::
+
+---
+
+## Projects
+
+::: {.grid}
+
+::: {.g-col-6}
+### Project 1
+Short description of what you did.
+
+[View more →](#)
+:::
+
+::: {.g-col-6}
+### Project 2
+Short description of another project.
+
+[View more →](#)
+:::
+
+::: {.g-col-6}
+---
+
+## Contact
+
+Email:  
+GitHub: 

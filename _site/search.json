@@ -18,7 +18,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "I am a student working on [Machine learning techniques for acoustic identification].\n\n\n\n\nInterest area 1\n\nInterest area 2\n\nMethodology focus\n\n\n\n\n\n\nData analysis / coding / research\nWriting and academic work\nTools: Quarto, Python, etc."
   },
   {
     "objectID": "index.html#heading-3",
@@ -26,5 +26,40 @@
     "title": "Portfolio Quarto Website",
     "section": "Heading 3",
     "text": "Heading 3\nSecond section\n\n1\n2\n3"
+  },
+  {
+    "objectID": "index.html#dissertation",
+    "href": "index.html#dissertation",
+    "title": "Portfolio Quarto Website",
+    "section": "Dissertation",
+    "text": "Dissertation\n\n\n\n\n\n\nNote\n\n\n\nA structured academic investigation into [topic]."
+  },
+  {
+    "objectID": "index.html#projects",
+    "href": "index.html#projects",
+    "title": "Portfolio Quarto Website",
+    "section": "Projects",
+    "text": "Projects\n\n\nProject 1\nShort description of what you did.\nView more →\n\n\nProject 2\nShort description of another project.\nView more →\n\n\n\n\nContact\nEmail:\nGitHub:"
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Portfolio Quarto Website",
+    "section": "Contact",
+    "text": "Contact\nEmail:\nGitHub:"
+  },
+  {
+    "objectID": "about.html#academic-focus",
+    "href": "about.html#academic-focus",
+    "title": "About",
+    "section": "",
+    "text": "Interest area 1\n\nInterest area 2\n\nMethodology focus"
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About",
+    "section": "",
+    "text": "Data analysis / coding / research\nWriting and academic work\nTools: Quarto, Python, etc."
   }
 ]
