@@ -4,6 +4,27 @@
     "href": "index.html",
     "title": "Portfolio Quarto Website",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This is my Quarto website."
+  },
+  {
+    "objectID": "index.html#heading-2",
+    "href": "index.html#heading-2",
+    "title": "Portfolio Quarto Website",
+    "section": "Heading 2",
+    "text": "Heading 2\nFirst section"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html#heading-3",
+    "href": "index.html#heading-3",
+    "title": "Portfolio Quarto Website",
+    "section": "Heading 3",
+    "text": "Heading 3\nSecond section\n\n1\n2\n3"
   }
 ]

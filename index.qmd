@@ -2,6 +2,17 @@
 title: "Portfolio Quarto Website"
 ---
 
-This is a Quarto website.
+This is my Quarto website.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+# Heading 1
+**AIM:**
+
+## Heading 2
+First section
+
+## Heading 3
+Second section
+
+- 1
+- 2
+- 3
