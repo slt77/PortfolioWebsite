@@ -44,3 +44,12 @@ Short description of another project.
 ::: {.g-col-6}
 
 ## SECR Package
+Spatially Explicit Capture Recapture
+
+::: {.callout-note}
+To access the function, first install SECR, install.packages("secr")
+:::
+
+Functions to estimate the density and size of a spatially distributed animal population sampled with an array of passive acoustic monitors (PAMs). Models incorporate distance-dependent detection are fitted by maximising the likelihood. Tools are also included for data manipulation and model selection.
+Spatially explicit capture-recapture is a set of methods for studying marked animals distributed in space. Data consists from the location of detectors and their histories of marked animals. Models for population density and detection are defined in secr using symbolic formula notation. Density models
+may include spatial or temporal trend, with predictors corresponding to time or behaviour. 
