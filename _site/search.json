@@ -18,7 +18,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "I am a student working on [Machine learning techniques for acoustic identification].\n\n\n\n\nInterest area 1\n\nInterest area 2\n\nMethodology focus\n\n\n\n\n\n\nData analysis / coding / research\nWriting and academic work\nTools: Quarto, Python, etc."
+    "text": "I am an MSc Statistical Ecology student working on Machine learning techniques for identification and categorisation in acoustic spectograms. This website will help you with the R package, SECR, often used in estimating animal abundances.\nWork through the home page step-by-step, to improve understanding about data processing, model validation and the SECR package."
   },
   {
     "objectID": "index.html#heading-3",
@@ -53,7 +53,7 @@
     "href": "about.html#academic-focus",
     "title": "About",
     "section": "",
-    "text": "Interest area 1\n\nInterest area 2\n\nMethodology focus"
+    "text": "I am an MSc Statistical Ecology student working on Machine learning techniques for identification and categorisation in acoustic spectograms. This website will help you with the R package, SECR, often used in estimating animal abundances.\nWork through the home page step-by-step, to improve understanding about data processing, model validation and the SECR package."
   },
   {
     "objectID": "about.html#skills",
@@ -61,5 +61,54 @@
     "title": "About",
     "section": "",
     "text": "Data analysis / coding / research\nWriting and academic work\nTools: Quarto, Python, etc."
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About",
+    "section": "Contact",
+    "text": "Contact\nEmail: slt7@st-andrews.ac.uk\nGitHub: slt77"
+  },
+  {
+    "objectID": "index.html#the-aim",
+    "href": "index.html#the-aim",
+    "title": "Portfolio Quarto Website",
+    "section": "The AIM",
+    "text": "The AIM\nTo improve model validation, data processing, data visulation with the SECR package"
+  },
+  {
+    "objectID": "index.html#data",
+    "href": "index.html#data",
+    "title": "Portfolio Quarto Website",
+    "section": "Data",
+    "text": "Data\nFirst section"
+  },
+  {
+    "objectID": "index.html#data-processing",
+    "href": "index.html#data-processing",
+    "title": "Portfolio Quarto Website",
+    "section": "Data Processing",
+    "text": "Data Processing\nSecond section\n\n1\n2\n3"
+  },
+  {
+    "objectID": "index.html#model-validation",
+    "href": "index.html#model-validation",
+    "title": "Portfolio Quarto Website",
+    "section": "Model Validation",
+    "text": "Model Validation\n\n\n\n\n\n\nNote\n\n\n\nA structured academic investigation into [topic].\n\n\n\n##Data Visualisation\n\n\nProject 1\nShort description of what you did.\nView more →\n\n\nProject 2\nShort description of another project.\nView more →\n\n\nSECR Package"
+  },
+  {
+    "objectID": "index.html#secr-package",
+    "href": "index.html#secr-package",
+    "title": "Portfolio Quarto Website",
+    "section": "SECR Package",
+    "text": "SECR Package"
+  },
+  {
+    "objectID": "about.html#myself",
+    "href": "about.html#myself",
+    "title": "About",
+    "section": "",
+    "text": "I am an MSc Statistical Ecology student working on Machine learning techniques for identification and categorisation in acoustic spectograms. This website will help you with the R package, SECR, often used in estimating animal abundances."
   }
 ]

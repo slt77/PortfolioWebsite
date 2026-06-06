@@ -2,22 +2,16 @@
 title: "About"
 ---
 
-# About Me
-
-I am a student working on **Machine learning techniques for acoustic identification**.
-
----
-
 ## Academic Focus
 
-- Interest area 1  
-- Interest area 2  
-- Methodology focus  
+I am an MSc Statistical Ecology student working on Machine learning techniques for identification and categorisation in acoustic spectograms. 
+This website will help you with the R package, SECR, often used in estimating animal abundances.
+
+Work through the home page step-by-step, to improve understanding about data processing, model validation and the SECR package.
 
 ---
+## Contact
 
-## Skills
+Email: slt7@st-andrews.ac.uk
 
-- Data analysis / coding / research
-- Writing and academic work
-- Tools: Quarto, Python, etc.
+GitHub: slt77
