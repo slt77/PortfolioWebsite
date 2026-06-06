@@ -2,6 +2,12 @@
 body {
   font-size: 17px;
   line-height: 1.6;
+
+/* Academic font */
+font-family: "Times New Roman", Times, serif;
+
+/* Warm paper background */
+background-color: #f7f3e9
 }
 
 /* 📖 Improve readability width */
@@ -24,6 +30,7 @@ h1, h2, h3 {
 /* 🎯 Make links more elegant */
 a {
   text-decoration: none;
+  color: #3a5a8a;
 }
 
 a:hover {

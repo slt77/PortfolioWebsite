@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Portfolio Quarto Website",
     "section": "",
-    "text": "This is my Quarto website."
+    "text": "This is my Quarto website.\nAIM: To improve model validation, data processing, data visulation with the SECR package"
   },
   {
     "objectID": "index.html#heading-2",
@@ -18,7 +18,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "I am an MSc Statistical Ecology student working on Machine learning techniques for identification and categorisation in acoustic spectograms. This website will help you with the R package, SECR, often used in estimating animal abundances.\nWork through the home page step-by-step, to improve understanding about data processing, model validation and the SECR package."
+    "text": "Hello, I am Sara L. Thomas.\nI am an MSc Statistical Ecology student working on Machine learning techniques for identification and categorisation in acoustic spectograms.\nThis website will help you with the R package, SECR, often used in estimating animal abundances.\nWork through the home page step-by-step, to improve understanding about data processing, model validation and the SECR package."
   },
   {
     "objectID": "index.html#heading-3",
@@ -53,7 +53,7 @@
     "href": "about.html#academic-focus",
     "title": "About",
     "section": "",
-    "text": "I am an MSc Statistical Ecology student working on Machine learning techniques for identification and categorisation in acoustic spectograms. This website will help you with the R package, SECR, often used in estimating animal abundances.\nWork through the home page step-by-step, to improve understanding about data processing, model validation and the SECR package."
+    "text": "Hello, I am Sara L. Thomas.\nI am an MSc Statistical Ecology student working on Machine learning techniques for identification and categorisation in acoustic spectograms.\nThis website will help you with the R package, SECR, often used in estimating animal abundances.\nWork through the home page step-by-step, to improve understanding about data processing, model validation and the SECR package."
   },
   {
     "objectID": "about.html#skills",
@@ -95,7 +95,7 @@
     "href": "index.html#model-validation",
     "title": "Portfolio Quarto Website",
     "section": "Model Validation",
-    "text": "Model Validation\n\n\n\n\n\n\nNote\n\n\n\nA structured academic investigation into [topic].\n\n\n\n##Data Visualisation\n\n\nProject 1\nShort description of what you did.\nView more →\n\n\nProject 2\nShort description of another project.\nView more →\n\n\nSECR Package"
+    "text": "Model Validation\n\n\n\n\n\n\nNote\n\n\n\nA structured academic investigation into [topic]."
   },
   {
     "objectID": "index.html#secr-package",
@@ -110,5 +110,12 @@
     "title": "About",
     "section": "",
     "text": "I am an MSc Statistical Ecology student working on Machine learning techniques for identification and categorisation in acoustic spectograms. This website will help you with the R package, SECR, often used in estimating animal abundances."
+  },
+  {
+    "objectID": "index.html#data-visualisation",
+    "href": "index.html#data-visualisation",
+    "title": "Portfolio Quarto Website",
+    "section": "Data Visualisation",
+    "text": "Data Visualisation\n\n\nProject 1\nShort description of what you did.\nView more →\n\n\nProject 2\nShort description of another project.\nView more →\n\n\nSECR Package"
   }
 ]

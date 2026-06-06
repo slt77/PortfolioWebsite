@@ -4,8 +4,7 @@ title: "Portfolio Quarto Website"
 
 This is my Quarto website.
 
-## The AIM
-**To improve model validation, data processing, data visulation with the SECR package**
+**AIM: To improve model validation, data processing, data visulation with the SECR package**
 
 ## Data
 First section
@@ -24,7 +23,7 @@ A structured academic investigation into [topic].
 
 ---
 
-##Data Visualisation
+## Data Visualisation
 
 ::: {.grid}
 

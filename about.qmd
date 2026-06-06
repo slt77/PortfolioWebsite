@@ -4,7 +4,10 @@ title: "About"
 
 ## Academic Focus
 
+Hello, I am Sara L. Thomas.
+
 I am an MSc Statistical Ecology student working on Machine learning techniques for identification and categorisation in acoustic spectograms. 
+
 This website will help you with the R package, SECR, often used in estimating animal abundances.
 
 Work through the home page step-by-step, to improve understanding about data processing, model validation and the SECR package.
