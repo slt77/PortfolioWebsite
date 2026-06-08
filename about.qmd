@@ -2,11 +2,24 @@
 title: "About"
 ---
 
-## Myself & Academic Focus
+## Myself 
 
+:::: {layout-ncol=2}
+
+::: {}
 Hello, I am Sara L. Thomas.
 
-I am an MSc Statistical Ecology student working on machine learning techniques for identification and categorisation in acoustic spectograms. 
+I am an MSc Statistical Ecology student at the University of St Andrews currently working on machine 
+learning techniques for identification and categorisation in acoustic spectograms.
+:::
+
+::: {}
+<img src="githubprofile.jpeg" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover;">
+:::
+
+::::
+
+## Academic Focus
 
 SECR is the final stage of a project I am helping with from collected Gibbon spectograms, occurring after data processing, logistic regression, machine learning with CNNs and a shiny app. 
 

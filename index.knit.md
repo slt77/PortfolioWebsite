@@ -10,7 +10,17 @@ This is my Quarto website.
 First section
 This includes data processed from spectograms, collected in Laos from Gibbon calls, specifically northern-white cheeked gibbons. 
 
-![A Gibbon call in a spectogram](outspectogram.jpeg)
+
+::: {.cell}
+
+```{.r .cell-code}
+knitr::include_graphics("outspectogram.jpeg")
+```
+
+::: {.cell-output-display}
+![](outspectogram.jpeg){width=138}
+:::
+:::
 
 ## Data Processing
 Second section

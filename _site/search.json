@@ -11,7 +11,7 @@
     "href": "index.html#data",
     "title": "Portfolio Quarto Website",
     "section": "Data",
-    "text": "Data\nFirst section This includes data processed from spectograms, collected in Laos from Gibbon calls, specifically northern-white cheeked gibbons."
+    "text": "Data\nFirst section This includes data processed from spectograms, collected in Laos from Gibbon calls, specifically northern-white cheeked gibbons.\n\n\n\nA Gibbon call in a spectogram"
   },
   {
     "objectID": "index.html#data-processing",
@@ -42,18 +42,25 @@
     "text": "SECR Package\nSpatially Explicit Capture Recapture\n\n\n\n\n\n\nNote\n\n\n\nTo access the function, first install SECR, install.packages(“secr”)\n\n\nFunctions to estimate the density and size of a spatially distributed animal population sampled with an array of passive acoustic monitors (PAMs). Models incorporate distance-dependent detection to maximise the likelihood. Tools are included for data manipulation and model selection. Spatially explicit capture-recapture is a set of methods for studying marked animals distributed in space. Data consists from the location of detectors and their histories of marked animals. Models for population density and detection are defined in secr. Density models may include spatial/temporal trends, with predictors corresponding to time or behaviour."
   },
   {
+    "objectID": "index.html#references",
+    "href": "index.html#references",
+    "title": "Portfolio Quarto Website",
+    "section": "References",
+    "text": "References"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Hello, I am Sara L. Thomas.\nI am an MSc Statistical Ecology student working on machine learning techniques for identification and categorisation in acoustic spectograms.\nSECR is the final stage of a project I am helping with from collected Gibbon spectograms, occurring after data processing, logistic regression, machine learning with CNNs and a shiny app.\nThis website will help you with the R package, SECR (spatially explicit capture-recapture), often used in estimating animal abundances.\nWork through the home page step-by-step, to improve understanding about data processing, model validation and the SECR package."
+    "text": "Hello, I am Sara L. Thomas. I am an MSc Statistical Ecology student working on machine learning techniques for identification and categorisation in acoustic spectograms."
   },
   {
-    "objectID": "about.html#academic-focus",
-    "href": "about.html#academic-focus",
+    "objectID": "about.html#myself-academic-focus",
+    "href": "about.html#myself-academic-focus",
     "title": "About",
     "section": "",
-    "text": "Hello, I am Sara L. Thomas.\nI am an MSc Statistical Ecology student working on machine learning techniques for identification and categorisation in acoustic spectograms.\nSECR is the final stage of a project I am helping with from collected Gibbon spectograms, occurring after data processing, logistic regression, machine learning with CNNs and a shiny app.\nThis website will help you with the R package, SECR (spatially explicit capture-recapture), often used in estimating animal abundances.\nWork through the home page step-by-step, to improve understanding about data processing, model validation and the SECR package."
+    "text": "Hello, I am Sara L. Thomas. \nI am an MSc Statistical Ecology student working on machine learning techniques for identification and categorisation in acoustic spectograms.\nSECR is the final stage of a project I am helping with from collected Gibbon spectograms, occurring after data processing, logistic regression, machine learning with CNNs and a shiny app.\nThis website will help you with the R package, SECR (spatially explicit capture-recapture), often used in estimating animal abundances.\nWork through the home page step-by-step, to improve understanding about data processing, model validation and the SECR package."
   },
   {
     "objectID": "about.html#contact",
@@ -63,10 +70,66 @@
     "text": "Contact\nEmail: slt7@st-andrews.ac.uk\nGitHub: slt77"
   },
   {
-    "objectID": "index.html#references",
-    "href": "index.html#references",
+    "objectID": "index.knit.html",
+    "href": "index.knit.html",
+    "title": "Portfolio Quarto Website",
+    "section": "",
+    "text": "This is my Quarto website.\nAIM: To improve model validation, data processing, data visulation with the SECR package"
+  },
+  {
+    "objectID": "index.knit.html#data",
+    "href": "index.knit.html#data",
+    "title": "Portfolio Quarto Website",
+    "section": "Data",
+    "text": "Data\nFirst section This includes data processed from spectograms, collected in Laos from Gibbon calls, specifically northern-white cheeked gibbons.\n\nknitr::include_graphics(\"outspectogram.jpeg\")"
+  },
+  {
+    "objectID": "index.knit.html#data-processing",
+    "href": "index.knit.html#data-processing",
+    "title": "Portfolio Quarto Website",
+    "section": "Data Processing",
+    "text": "Data Processing\nSecond section\n\n1\n2\n3"
+  },
+  {
+    "objectID": "index.knit.html#model-validation",
+    "href": "index.knit.html#model-validation",
+    "title": "Portfolio Quarto Website",
+    "section": "Model Validation",
+    "text": "Model Validation\n\n\n\n\n\n\nNote\n\n\n\nA structured academic investigation into [topic]."
+  },
+  {
+    "objectID": "index.knit.html#data-visualisation",
+    "href": "index.knit.html#data-visualisation",
+    "title": "Portfolio Quarto Website",
+    "section": "Data Visualisation",
+    "text": "Data Visualisation\n\n\nProject 1\nShort description of what you did.\nView more →\n\n\nProject 2\nShort description of another project.\nView more →"
+  },
+  {
+    "objectID": "index.knit.html#secr-package",
+    "href": "index.knit.html#secr-package",
+    "title": "Portfolio Quarto Website",
+    "section": "SECR Package",
+    "text": "SECR Package\nSpatially Explicit Capture Recapture\n\n\n\n\n\n\nNote\n\n\n\nTo access the function, first install SECR, install.packages(“secr”)\n\n\nFunctions to estimate the density and size of a spatially distributed animal population sampled with an array of passive acoustic monitors (PAMs). Models incorporate distance-dependent detection to maximise the likelihood. Tools are included for data manipulation and model selection. Spatially explicit capture-recapture is a set of methods for studying marked animals distributed in space. Data consists from the location of detectors and their histories of marked animals. Models for population density and detection are defined in secr. Density models may include spatial/temporal trends, with predictors corresponding to time or behaviour."
+  },
+  {
+    "objectID": "index.knit.html#references",
+    "href": "index.knit.html#references",
     "title": "Portfolio Quarto Website",
     "section": "References",
     "text": "References"
+  },
+  {
+    "objectID": "about.html#myself",
+    "href": "about.html#myself",
+    "title": "About",
+    "section": "",
+    "text": "Hello, I am Sara L. Thomas. I am an MSc Statistical Ecology student working on machine learning techniques for identification and categorisation in acoustic spectograms."
+  },
+  {
+    "objectID": "about.html#academic-focus",
+    "href": "about.html#academic-focus",
+    "title": "About",
+    "section": "Academic Focus",
+    "text": "Academic Focus\nSECR is the final stage of a project I am helping with from collected Gibbon spectograms, occurring after data processing, logistic regression, machine learning with CNNs and a shiny app.\nThis website will help you with the R package, SECR (spatially explicit capture-recapture), often used in estimating animal abundances.\nWork through the home page step-by-step, to improve understanding about data processing, model validation and the SECR package."
   }
 ]
