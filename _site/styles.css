@@ -3,31 +3,31 @@ body {
   font-size: 17px;
   line-height: 1.6;
 
-/* Academic font */
+/* font */
 font-family: "Times New Roman", Times, serif;
 
-/* Warm paper background */
+/* background */
 background-color: #f7f3e9
 }
 
-/* 📖 Improve readability width */
+/* readability width */
 main {
   max-width: 800px;
   margin: auto;
 }
 
-/* ✨ Subtle typography upgrade */
+/* typography upgrade */
 h1, h2, h3 {
   letter-spacing: -0.02em;
   font-weight: 600;
 }
 
-/* 🧩 Softer callouts (less harsh than default darkly) */
+/* softer callouts (less harsh than default darkly) */
 .callout {
   border-radius: 10px;
 }
 
-/* 🎯 Make links more elegant */
+/* links */
 a {
   text-decoration: none;
   color: #3a5a8a;
