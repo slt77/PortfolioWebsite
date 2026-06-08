@@ -43,6 +43,8 @@ Short description of another project.
 
 ::: {.g-col-6}
 
+---
+
 ## SECR Package
 Spatially Explicit Capture Recapture
 
