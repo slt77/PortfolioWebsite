@@ -10,7 +10,7 @@ font-family: "Times New Roman", Times, serif;
 background-color: #f7f3e9
 }
 
-/* readability width */
+/* readability width*/
 main {
   max-width: 800px;
   margin: auto;
@@ -22,7 +22,7 @@ h1, h2, h3 {
   font-weight: 600;
 }
 
-/* softer callouts (less harsh than default darkly) */
+/* softer callouts */
 .callout {
   border-radius: 10px;
 }
