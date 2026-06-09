@@ -11,7 +11,7 @@
     "href": "index.html#data",
     "title": "Portfolio Quarto Website",
     "section": "Data",
-    "text": "Data\nFirst section This includes data processed from spectograms, collected in Laos from Gibbon calls, specifically northern-white cheeked gibbons.\n\n\n\nA Gibbon call in a spectogram"
+    "text": "Data\nFirst section This includes data processed from spectograms, collected in Laos from Gibbon calls, specifically northern-white cheeked gibbons.\n\n\n\nA Gibbon call in a spectogram (Clink et al., 2021)"
   },
   {
     "objectID": "index.html#data-processing",
@@ -39,14 +39,14 @@
     "href": "index.html#secr-package",
     "title": "Portfolio Quarto Website",
     "section": "SECR Package",
-    "text": "SECR Package\nSpatially Explicit Capture Recapture\nEstimate the density and size of spatially distributed animal populations from detector arrays via passive acoustic monitors (PAMs), using maximum-likelihood SECR models. SECR models the detection locations and the histories of marked animals, allowing you to estimate population density and to fit a model to show how probability declines with distance from each detector, including spatial/temporal trends (Efford and Fewster, 2012).\nDetection functions describe the probability of detection as a given detector declines with distance (non-euclidean) from animals activity centre, the most commonly used is Half-Normal (HN) (Efford and Schofield, 2022).\n\n\n\n\n\n\nNote\n\n\n\nThe secr R package assumes the population is closed during the sampling period so there is no movement out of the area - no births, deaths, immigration or emigration occurs (Efford and Schofield, 2022).\n\n\n\n1 First install from CRAN: install.packages(“secr”)\n2 Load package: library(secr)\n3 List all available detection functions: ?detectfn"
+    "text": "SECR Package\nSpatially Explicit Capture Recapture\nEstimate the density and size of spatially distributed animal populations from detector arrays via passive acoustic monitors (PAMs), using maximum-likelihood SECR models. SECR models the detection locations and the histories of marked animals, allowing you to estimate population density and to fit a model to show how probability declines with distance from each detector, including spatial/temporal trends (Efford and Fewster, 2012).\nDetection functions describe the probability of detection as a given detector declines with distance (non-euclidean) from animals activity centre, the most commonly used is Half-Normal (HN) (Efford and Schofield, 2022).\n\n\n\n\n\n\nNote\n\n\n\nThe secr R package assumes the population is closed during the sampling period so there is no movement out of the area - no births, deaths, immigration or emigration occurs (Efford and Schofield, 2022).\n\n\n\n\nFirst install from CRAN: install.packages(“secr”)\n\n\nLoad package: library(secr)\n\n\nList all available detection functions: ?detectfn"
   },
   {
     "objectID": "index.html#references",
     "href": "index.html#references",
     "title": "Portfolio Quarto Website",
     "section": "References",
-    "text": "References\nEfford, M.G. and Fewster, R.M. (2012). Estimating population size by spatially explici capture-recapture. Oikos, 122(6), pp. 918-928. DOI: 10.1111/j.1600-0706.2012.20440.x.\nEfford, M.G. and Schofield, M.R. (2022). A review of movement models in open population capture-recapture. Methods in Ecology and Evolution, 13(10), pp. 2106-2118. DOI: 10.1111/2041-210X.13947."
+    "text": "References\nClink, D.J., Zafar, M., Ahmad, A.H. and Lau, A.R. (2021). Limited Evidence for Individual Signatures or Site-Level Patterns pf Variation in Male Northern Gray Gibbon (Hylobates funereus) Duet Codas. International Journal of Primatology, 42(12), pp:1-19. DOI: 10.1007/s10764-021-00250-2.\nEfford, M.G. and Fewster, R.M. (2012). Estimating population size by spatially explicit capture-recapture. Oikos, 122(6), pp. 918-928. DOI: 10.1111/j.1600-0706.2012.20440.x.\nEfford, M.G. and Schofield, M.R. (2022). A review of movement models in open population capture-recapture. Methods in Ecology and Evolution, 13(10), pp. 2106-2118. DOI: 10.1111/2041-210X.13947."
   },
   {
     "objectID": "about.html",
@@ -137,6 +137,6 @@
     "href": "index.html#further-reading",
     "title": "Portfolio Quarto Website",
     "section": "Further Reading",
-    "text": "Further Reading\nIf you want extra reading/clarification for this function then see the GitHub page of the creator, Murray Efford.\nMurray Efford →"
+    "text": "Further Reading\nIf you want extra reading/clarification for this package then see the GitHub page of the creator, Murray Efford.\nMurray Efford →"
   }
 ]
