@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Portfolio Quarto Website",
     "section": "",
-    "text": "This is my Quarto website.\nAIM: To improve model validation, data processing, data visulation with the SECR package"
+    "text": "This is my Quarto website.\nAIM: To improve model validation, data processing, data visualisation with the SECR package"
   },
   {
     "objectID": "index.html#data",
@@ -39,7 +39,7 @@
     "href": "index.html#secr-package",
     "title": "Portfolio Quarto Website",
     "section": "SECR Package",
-    "text": "SECR Package\nSpatially Explicit Capture Recapture\n\n\n\n\n\n\nNote\n\n\n\nTo access the function, first install SECR, install.packages(“secr”)\n\n\nFunctions to estimate the density and size of a spatially distributed animal population sampled with an array of passive acoustic monitors (PAMs). Models incorporate distance-dependent detection to maximise the likelihood. Tools are included for data manipulation and model selection. Spatially explicit capture-recapture is a set of methods for studying marked animals distributed in space. Data consists from the location of detectors and their histories of marked animals. Models for population density and detection are defined in secr. Density models may include spatial/temporal trends, with predictors corresponding to time or behaviour."
+    "text": "SECR Package\nSpatially Explicit Capture Recapture\nEstimate the density and size of spatially distributed animal populations from detector arrays via passive acoustic monitors (PAMs), using maximum-likelihood SECR models. Tools are included for data manipulation and model selection. SECR models the locations of detections and the histories of marked animals, allowing you to estimate population density and to fit a model to show how probability declines with distance from each detector, including spatial/temporal trends.\nDetection functions describe how the probability of being detected a a given detector declines with distance from animals activity centre, most commonly used is HalfNormal (HN).\n\n\n\n\n\n\nNote\n\n\n\nThe secr R package assumes the population is closed during the sampling period so no animals move out of the area - no births, deaths, immigration or emigration occurs ().\n\n\n\n1 First install from CRAN: install.packages(“secr”)\n2 Load package: library(secr)\n3 List all available detection functions: ?detectfn"
   },
   {
     "objectID": "index.html#references",
@@ -131,5 +131,12 @@
     "title": "About",
     "section": "Academic Focus",
     "text": "Academic Focus\nSECR is the final stage of a project I am helping with from collected Gibbon spectograms, occurring after data processing, logistic regression, machine learning with CNNs and a shiny app.\nThis website will help you with the R package, SECR (spatially explicit capture-recapture), often used in estimating animal abundances.\nWork through the home page step-by-step, to improve understanding about data processing, model validation and the SECR package."
+  },
+  {
+    "objectID": "index.html#further-reading",
+    "href": "index.html#further-reading",
+    "title": "Portfolio Quarto Website",
+    "section": "Further Reading",
+    "text": "Further Reading\nIf you want extra reading/clarification for this function then see the GitHub page of the creator, Murray Efford.\nMurray Efford →"
   }
 ]

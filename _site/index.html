@@ -121,6 +121,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#model-validation" id="toc-model-validation" class="nav-link" data-scroll-target="#model-validation">Model Validation</a></li>
   <li><a href="#data-visualisation" id="toc-data-visualisation" class="nav-link" data-scroll-target="#data-visualisation">Data Visualisation</a></li>
   <li><a href="#secr-package" id="toc-secr-package" class="nav-link" data-scroll-target="#secr-package">SECR Package</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further Reading</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
@@ -148,7 +149,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>This is my Quarto website.</p>
-<p><strong>AIM: To improve model validation, data processing, data visulation with the SECR package</strong></p>
+<p><strong>AIM: To improve model validation, data processing, data visualisation with the SECR package</strong></p>
 <section id="data" class="level2">
 <h2 class="anchored" data-anchor-id="data">Data</h2>
 <p>First section This includes data processed from spectograms, collected in Laos from Gibbon calls, specifically northern-white cheeked gibbons.</p>
@@ -204,6 +205,8 @@ Note
 <section id="secr-package" class="level2">
 <h2 class="anchored" data-anchor-id="secr-package">SECR Package</h2>
 <p>Spatially Explicit Capture Recapture</p>
+<p>Estimate the density and size of spatially distributed animal populations from detector arrays via passive acoustic monitors (PAMs), using maximum-likelihood SECR models. Tools are included for data manipulation and model selection. SECR models the locations of detections and the histories of marked animals, allowing you to estimate population density and to fit a model to show how probability declines with distance from each detector, including spatial/temporal trends.</p>
+<p>Detection functions describe how the probability of being detected a a given detector declines with distance from animals activity centre, most commonly used is HalfNormal (HN).</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -214,11 +217,20 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>To access the function, first install SECR, install.packages(“secr”)</p>
+<p>The <strong>secr</strong> R package assumes the population is <em>closed</em> during the sampling period so no animals move out of the area - no births, deaths, immigration or emigration occurs ().</p>
 </div>
 </div>
-<p>Functions to estimate the density and size of a spatially distributed animal population sampled with an array of passive acoustic monitors (PAMs). Models incorporate distance-dependent detection to maximise the likelihood. Tools are included for data manipulation and model selection. Spatially explicit capture-recapture is a set of methods for studying marked animals distributed in space. Data consists from the location of detectors and their histories of marked animals. Models for population density and detection are defined in secr. Density models may include spatial/temporal trends, with predictors corresponding to time or behaviour.</p>
+<ul>
+<li>1 First install from CRAN: install.packages(“secr”)</li>
+<li>2 Load package: library(secr)</li>
+<li>3 List all available detection functions: ?detectfn</li>
+</ul>
 <hr>
+</section>
+<section id="further-reading" class="level2">
+<h2 class="anchored" data-anchor-id="further-reading">Further Reading</h2>
+<p>If you want extra reading/clarification for this function then see the GitHub page of the creator, Murray Efford.</p>
+<p><a href="https://github.com/MurrayEfford/secr/">Murray Efford →</a></p>
 </section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
