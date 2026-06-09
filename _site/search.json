@@ -25,14 +25,14 @@
     "href": "index.html#model-validation",
     "title": "Portfolio Quarto Website",
     "section": "Model Validation",
-    "text": "Model Validation\n\n\n\n\n\n\nNote\n\n\n\nA structured academic investigation into [topic]."
+    "text": "Model Validation\n\nCheck convergence\nInspect parameter estimates → predict() w// 95% CIs\nGoodness of fit → Pearson chi-squared test\nModel Comparison → AIC()\nDensity estimates"
   },
   {
     "objectID": "index.html#data-visualisation",
     "href": "index.html#data-visualisation",
     "title": "Portfolio Quarto Website",
     "section": "Data Visualisation",
-    "text": "Data Visualisation\n\n\nProject 1\nShort description of what you did.\nView more →\n\n\nProject 2\nShort description of another project.\nView more →"
+    "text": "Data Visualisation\n\n\nProject 1\ndescription.\nView more →\n\n\nProject 2\ndescription.\nView more →"
   },
   {
     "objectID": "index.html#secr-package",

@@ -37,10 +37,15 @@ The **secr** R package assumes the population is *closed* during the sampling pe
 - 2. Load package: library(secr)
 - 3. List all available detection functions: ?detectfn
 
+---
+
 ## Model Validation
-::: {.callout-note}
-A structured academic investigation into [topic].
-:::
+
+- Check convergence
+- Inspect parameter estimates → predict() w// 95% CIs
+- Goodness of fit → Pearson chi-squared test
+- Model Comparison → AIC()
+- Density estimates
 
 ---
 
@@ -50,14 +55,14 @@ A structured academic investigation into [topic].
 
 ::: {.g-col-6}
 ### Project 1
-Short description of what you did.
+description.
 
 [View more →](#)
 :::
 
 ::: {.g-col-6}
 ### Project 2
-Short description of another project.
+description.
 
 [View more →](#)
 :::
