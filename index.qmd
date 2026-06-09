@@ -19,6 +19,24 @@ Second section
 - 2
 - 3
 
+---
+
+## SECR Package
+Spatially Explicit Capture Recapture
+
+Estimate the density and size of spatially distributed animal populations from detector arrays via passive acoustic monitors (PAMs), using maximum-likelihood SECR models.
+SECR models the detection locations and the histories of marked animals, allowing you to estimate population density and to fit a model to show how probability declines with distance from each detector, including spatial/temporal trends (Efford and Fewster, 2012).
+
+Detection functions describe the probability of detection as a given detector declines with distance (non-euclidean) from animals activity centre, the most commonly used is Half-Normal (HN) (Efford and Schofield, 2022).
+
+::: {.callout-note}
+The **secr** R package assumes the population is *closed* during the sampling period so there is no movement out of the area - no births, deaths, immigration or emigration occurs (Efford and Schofield, 2022). 
+:::
+
+- 1 First install from CRAN: install.packages("secr")
+- 2 Load package: library(secr)
+- 3 List all available detection functions: ?detectfn
+
 ## Model Validation
 ::: {.callout-note}
 A structured academic investigation into [topic].
@@ -45,24 +63,6 @@ Short description of another project.
 :::
 
 :::
-
----
-
-## SECR Package
-Spatially Explicit Capture Recapture
-
-Estimate the density and size of spatially distributed animal populations from detector arrays via passive acoustic monitors (PAMs), using maximum-likelihood SECR models.
-SECR models the detection locations and the histories of marked animals, allowing you to estimate population density and to fit a model to show how probability declines with distance from each detector, including spatial/temporal trends (Efford and Fewster, 2012).
-
-Detection functions describe the probability of detection as a given detector declines with distance (non-euclidean) from animals activity centre, the most commonly used is Half-Normal (HN) (Efford and Schofield, 2022).
-
-::: {.callout-note}
-The **secr** R package assumes the population is *closed* during the sampling period so there is no movement out of the area - no births, deaths, immigration or emigration occurs (Efford and Schofield, 2022). 
-:::
-
-- 1 First install from CRAN: install.packages("secr")
-- 2 Load package: library(secr)
-- 3 List all available detection functions: ?detectfn
 
 ---
 ## Further Reading
