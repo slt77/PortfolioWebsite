@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "Portfolio Quarto Website",
     "section": "",
-    "text": "This is my Quarto website.\nAIM: To improve model validation, data processing, data visualisation with the SECR package"
+    "text": "AIM: To improve model validation, data processing, data visualisation with the SECR package"
   },
   {
     "objectID": "index.html#data",
     "href": "index.html#data",
     "title": "Portfolio Quarto Website",
     "section": "Data",
-    "text": "Data\nFirst section This includes data processed from spectograms, collected in Laos from Gibbon calls, specifically northern-white cheeked gibbons.\n\n\n\nA Gibbon call in a spectogram (Clink et al., 2021)"
+    "text": "Data\nFirst section This includes data processed from spectograms, collected in Laos from Gibbon calls, specifically northern-white cheeked gibbons.\n\n\n\nA Gibbon call in a spectogram (Clink et al., 2021)\n\n\nSECR needs a traps object (detector locations) and a capthist object (detection histories). This can be done with a csv file, or from acoustic detectors, only the detector type needs to be changed from proximity to signal.\ntraps &lt;- read.traps.(“detector.csv”, detector = “proximity”)\nThe capture history data needs to have the columns: session, animal ID, occasion and detector ID.\n\n\n\n\n\n\nNote\n\n\n\nAnimal IDs must be unique within a session.Otherwise use multi-season capthist objects."
   },
   {
     "objectID": "index.html#data-processing",
@@ -32,7 +32,7 @@
     "href": "index.html#data-visualisation",
     "title": "Portfolio Quarto Website",
     "section": "Data Visualisation",
-    "text": "Data Visualisation\n\n\nProject 1\ndescription.\nView more →\n\n\nProject 2\ndescription.\nView more →"
+    "text": "Data Visualisation\n\n\nProject 1\nDensity estimates.\nView more →\n\n\nProject 2\nGoodness of fit.\nView more →"
   },
   {
     "objectID": "index.html#secr-package",

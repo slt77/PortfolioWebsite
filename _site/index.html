@@ -148,7 +148,6 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is my Quarto website.</p>
 <p><strong>AIM: To improve model validation, data processing, data visualisation with the SECR package</strong></p>
 <section id="data" class="level2">
 <h2 class="anchored" data-anchor-id="data">Data</h2>
@@ -158,6 +157,22 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="outspectogram.jpeg" class="img-fluid figure-img"></p>
 <figcaption>A Gibbon call in a spectogram (Clink et al., 2021)</figcaption>
 </figure>
+</div>
+<p>SECR needs a traps object (detector locations) and a capthist object (detection histories). This can be done with a csv file, or from acoustic detectors, only the detector type needs to be changed from proximity to signal.</p>
+<p>traps &lt;- read.traps.(“detector.csv”, detector = “proximity”)</p>
+<p>The capture history data needs to have the columns: session, animal ID, occasion and detector ID.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Animal IDs must be <strong>unique</strong> within a session.Otherwise use multi-season capthist objects.</p>
+</div>
 </div>
 </section>
 <section id="data-processing" class="level2">
@@ -217,12 +232,12 @@ Note
 <div class="grid">
 <section id="project-1" class="level3 g-col-6">
 <h3 class="anchored" data-anchor-id="project-1">Project 1</h3>
-<p>description.</p>
+<p>Density estimates.</p>
 <p><a href="#">View more →</a></p>
 </section>
 <section id="project-2" class="level3 g-col-6">
 <h3 class="anchored" data-anchor-id="project-2">Project 2</h3>
-<p>description.</p>
+<p>Goodness of fit.</p>
 <p><a href="#">View more →</a></p>
 </section>
 </div>

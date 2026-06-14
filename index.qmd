@@ -2,8 +2,6 @@
 title: "Portfolio Quarto Website"
 ---
 
-This is my Quarto website.
-
 **AIM: To improve model validation, data processing, data visualisation with the SECR package**
 
 ## Data
@@ -11,6 +9,16 @@ First section
 This includes data processed from spectograms, collected in Laos from Gibbon calls, specifically northern-white cheeked gibbons. 
 
 ![A Gibbon call in a spectogram (Clink et al., 2021)](outspectogram.jpeg)
+
+SECR needs a traps object (detector locations) and a capthist object (detection histories). This can be done with a csv file, or from acoustic detectors, only the detector type needs to be changed from proximity to signal.
+
+traps <- read.traps.("detector.csv", detector = "proximity")
+
+The capture history data needs to have the columns: session, animal ID, occasion and detector ID.
+
+::: {.callout-note}
+Animal IDs must be **unique** within a session.Otherwise use multi-season capthist objects.
+:::
 
 ## Data Processing
 Second section
@@ -55,14 +63,14 @@ The **secr** R package assumes the population is *closed* during the sampling pe
 
 ::: {.g-col-6}
 ### Project 1
-description.
+Density estimates. 
 
 [View more →](#)
 :::
 
 ::: {.g-col-6}
 ### Project 2
-description.
+Goodness of fit.
 
 [View more →](#)
 :::
