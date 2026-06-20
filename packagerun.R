@@ -1,11 +1,9 @@
+#install and load package
+install.packages("secr")
 library(secr)
-
-library(acre)
 
 #load all datasets
 data(package = "secr")
-
-#data(secrdemo)
 
 #load data
 data(ovenbird)
@@ -19,8 +17,16 @@ plot(ovenCH, tracks = TRUE)
 traps(ovenCH)
 plot(traps(ovenCH))
 
+#mask & fit
+ovenmask <- make.mask(traps(ovenCH)["2005"],
+                      type = "trapbuffer", buffer = 400, spacing = 15)
+
 #fit model
-fit <- secr.fit(ovenCH, mask = ovenmask, trace = FALSE)
+model1 <- secr.fit(ovenCH, mask = ovenmask, trace = FALSE)
+model2 <- secr.fit(ovenCH, mask = ovenmask, model = list(D ~ Session))
+model3 <- secr.fit(ovenCH, mask = ovenmask, model = list(g0 ~ Sex))
+
+AIC(model1,model2,model3)
 
 #density results
 summary(fit)
