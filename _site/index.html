@@ -116,11 +116,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#data" id="toc-data" class="nav-link active" data-scroll-target="#data">Data</a></li>
-  <li><a href="#data-processing" id="toc-data-processing" class="nav-link" data-scroll-target="#data-processing">Data Processing</a></li>
-  <li><a href="#secr-package" id="toc-secr-package" class="nav-link" data-scroll-target="#secr-package">SECR Package</a></li>
-  <li><a href="#model-validation" id="toc-model-validation" class="nav-link" data-scroll-target="#model-validation">Model Validation</a></li>
-  <li><a href="#data-visualisation" id="toc-data-visualisation" class="nav-link" data-scroll-target="#data-visualisation">Data Visualisation</a></li>
+  <li><a href="#secr-package" id="toc-secr-package" class="nav-link active" data-scroll-target="#secr-package">SECR Package</a></li>
+  <li><a href="#detectors-data" id="toc-detectors-data" class="nav-link" data-scroll-target="#detectors-data">Detectors &amp; Data</a></li>
+  <li><a href="#fitting-the-model" id="toc-fitting-the-model" class="nav-link" data-scroll-target="#fitting-the-model">Fitting the Model</a></li>
+  <li><a href="#model-validation-selection" id="toc-model-validation-selection" class="nav-link" data-scroll-target="#model-validation-selection">Model Validation &amp; Selection</a></li>
+  <li><a href="#microphone-arrays-signal-strength" id="toc-microphone-arrays-signal-strength" class="nav-link" data-scroll-target="#microphone-arrays-signal-strength">Microphone Arrays &amp; Signal Strength</a></li>
+  <li><a href="#example-and-acre-package" id="toc-example-and-acre-package" class="nav-link" data-scroll-target="#example-and-acre-package">Example and ACRE Package</a></li>
   <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further Reading</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
@@ -149,9 +150,40 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><strong>AIM: To improve model validation, data processing, data visualisation with the SECR package</strong></p>
-<section id="data" class="level2">
-<h2 class="anchored" data-anchor-id="data">Data</h2>
-<p>First section This includes data processed from spectograms, collected in Laos from Gibbon calls, specifically northern-white cheeked gibbons.</p>
+<section id="secr-package" class="level2">
+<h2 class="anchored" data-anchor-id="secr-package">SECR Package</h2>
+<p>Spatially Explicit Capture Recapture</p>
+<p>Estimate the density and size of spatially distributed animal populations from detector arrays via passive acoustic monitors (PAMs), using the maximum-likelihood.</p>
+<p>SECR models the detection locations and the histories of marked animals, allowing you to estimate population density and to fit a model to show how probability declines with distance from each detector, including spatial/temporal trends (Efford and Fewster, 2012).</p>
+<p>Detection functions describe the probability of detection as a given detector declines with distance (non-euclidean) from animals activity centre, the most commonly used is Half-Normal (HN) (Efford and Schofield, 2022).</p>
+<ul>
+<li>Traps = detector coordinates &amp; type</li>
+<li>capthist = detection histories per individual</li>
+<li>mask = habitat grid for the likelihood</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The <strong>secr</strong> R package assumes the population is <em>closed</em> during the sampling period so there is no movement out of the area - no births, deaths, immigration or emigration occurs (Efford and Schofield, 2022).</p>
+</div>
+</div>
+<ol type="1">
+<li>First install from CRAN: install.packages(“secr”)</li>
+<li>Load package: library(secr)</li>
+<li>List all available detection functions: ?detectfn</li>
+</ol>
+<hr>
+</section>
+<section id="detectors-data" class="level2">
+<h2 class="anchored" data-anchor-id="detectors-data">Detectors &amp; Data</h2>
+<p>Data from spectograms, collected from northern-white cheeked gibbons calls in Laos.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="outspectogram.jpeg" class="img-fluid figure-img"></p>
@@ -174,70 +206,38 @@ Note
 <p>Animal IDs must be <strong>unique</strong> within a session.Otherwise use multi-season capthist objects.</p>
 </div>
 </div>
+<hr>
 </section>
-<section id="data-processing" class="level2">
-<h2 class="anchored" data-anchor-id="data-processing">Data Processing</h2>
-<p>Second section</p>
+<section id="fitting-the-model" class="level2">
+<h2 class="anchored" data-anchor-id="fitting-the-model">Fitting the Model</h2>
+<p>The fitted secr model: fit0 &lt;- secr.fit(ch,mask = mask, model = list(D~1, g0~1, sigma~1), detectfn = “HN”)</p>
+<p>Now add covariates to the fitted model: fitB &lt;- secr.fit(ch, model=list(D~1, g0~b, sigma~1))</p>
+<hr>
+</section>
+<section id="model-validation-selection" class="level2">
+<h2 class="anchored" data-anchor-id="model-validation-selection">Model Validation &amp; Selection</h2>
 <ul>
-<li>1</li>
-<li>2</li>
-<li>3</li>
+<li>Inspect parameter estimates → predict(fit0) w// 95% CIs</li>
+<li>Model Comparison → AIC(fit0, fitB)</li>
+<li>Density estimates → region.N(fit0)</li>
 </ul>
 <hr>
 </section>
-<section id="secr-package" class="level2">
-<h2 class="anchored" data-anchor-id="secr-package">SECR Package</h2>
-<p>Spatially Explicit Capture Recapture</p>
-<p>Estimate the density and size of spatially distributed animal populations from detector arrays via passive acoustic monitors (PAMs), using maximum-likelihood SECR models. SECR models the detection locations and the histories of marked animals, allowing you to estimate population density and to fit a model to show how probability declines with distance from each detector, including spatial/temporal trends (Efford and Fewster, 2012).</p>
-<p>Detection functions describe the probability of detection as a given detector declines with distance (non-euclidean) from animals activity centre, the most commonly used is Half-Normal (HN) (Efford and Schofield, 2022).</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The <strong>secr</strong> R package assumes the population is <em>closed</em> during the sampling period so there is no movement out of the area - no births, deaths, immigration or emigration occurs (Efford and Schofield, 2022).</p>
-</div>
-</div>
-<ul>
-<li><ol type="1">
-<li>First install from CRAN: install.packages(“secr”)</li>
-</ol></li>
-<li><ol start="2" type="1">
-<li>Load package: library(secr)</li>
-</ol></li>
-<li><ol start="3" type="1">
-<li>List all available detection functions: ?detectfn</li>
-</ol></li>
-</ul>
+<section id="microphone-arrays-signal-strength" class="level2">
+<h2 class="anchored" data-anchor-id="microphone-arrays-signal-strength">Microphone Arrays &amp; Signal Strength</h2>
 <hr>
 </section>
-<section id="model-validation" class="level2">
-<h2 class="anchored" data-anchor-id="model-validation">Model Validation</h2>
-<ul>
-<li>Check convergence</li>
-<li>Inspect parameter estimates → predict() w// 95% CIs</li>
-<li>Goodness of fit → Pearson chi-squared test</li>
-<li>Model Comparison → AIC()</li>
-<li>Density estimates</li>
-</ul>
-<hr>
-</section>
-<section id="data-visualisation" class="level2">
-<h2 class="anchored" data-anchor-id="data-visualisation">Data Visualisation</h2>
+<section id="example-and-acre-package" class="level2">
+<h2 class="anchored" data-anchor-id="example-and-acre-package">Example and ACRE Package</h2>
 <div class="grid">
-<section id="project-1" class="level3 g-col-6">
-<h3 class="anchored" data-anchor-id="project-1">Project 1</h3>
-<p>Density estimates.</p>
+<section id="example-with-secr-package" class="level3 g-col-6">
+<h3 class="anchored" data-anchor-id="example-with-secr-package">Example with “secr” package</h3>
+<p>Live Demo with the Ovenbird dataset.</p>
 <p><a href="#">View more →</a></p>
 </section>
-<section id="project-2" class="level3 g-col-6">
-<h3 class="anchored" data-anchor-id="project-2">Project 2</h3>
-<p>Goodness of fit.</p>
+<section id="overview-of-acre" class="level3 g-col-6">
+<h3 class="anchored" data-anchor-id="overview-of-acre">Overview of “acre”</h3>
+<p>Important notes on using this package for acoustics.</p>
 <p><a href="#">View more →</a></p>
 </section>
 </div>
@@ -245,8 +245,7 @@ Note
 </section>
 <section id="further-reading" class="level2">
 <h2 class="anchored" data-anchor-id="further-reading">Further Reading</h2>
-<p>If you want extra reading/clarification for this package then see the GitHub page of the creator, Murray Efford.</p>
-<p><a href="https://github.com/MurrayEfford/secr/">Murray Efford →</a></p>
+<p>Visit the GitHub page of the creator,<a href="https://github.com/MurrayEfford/secr/">Murray Efford →</a></p>
 </section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>

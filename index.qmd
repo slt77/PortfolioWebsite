@@ -4,7 +4,6 @@ title: "Portfolio Quarto Website"
 
 **AIM: To improve model validation, data processing, data visualisation with the SECR package**
 
-
 ## SECR Package
 Spatially Explicit Capture Recapture
 
@@ -47,7 +46,7 @@ Animal IDs must be **unique** within a session.Otherwise use multi-season capthi
 
 ---
 
-## secr.fit() and Model Selection
+## Fitting the Model
 The fitted secr model:
 fit0 <- secr.fit(ch,mask = mask, 
                  model = list(D~1, g0~1, sigma~1), detectfn = "HN")
@@ -57,10 +56,10 @@ fitB <- secr.fit(ch, model=list(D~1, g0~b, sigma~1))
 
 ---
 
-## Model Validation
+## Model Validation & Selection
 
 - Inspect parameter estimates → predict(fit0) w// 95% CIs
-- Model Comparison → AIC(fit0,fitB)
+- Model Comparison → AIC(fit0, fitB)
 - Density estimates → region.N(fit0)
 
 ---
@@ -74,15 +73,15 @@ fitB <- secr.fit(ch, model=list(D~1, g0~b, sigma~1))
 ::: {.grid}
 
 ::: {.g-col-6}
-### Project 1
+### Example with "secr" package
 Live Demo with the Ovenbird dataset.
 
 [View more →](#)
 :::
 
 ::: {.g-col-6}
-### Project 2
-Acoustic data package "acre".
+### Overview of "acre"
+Important notes on using this package for acoustics.
 
 [View more →](#)
 :::
