@@ -4,9 +4,34 @@ title: "Portfolio Quarto Website"
 
 **AIM: To improve model validation, data processing, data visualisation with the SECR package**
 
-## Data
-First section
-This includes data processed from spectograms, collected in Laos from Gibbon calls, specifically northern-white cheeked gibbons. 
+
+## SECR Package
+Spatially Explicit Capture Recapture
+
+Estimate the density and size of spatially distributed animal populations from detector arrays via passive acoustic monitors (PAMs), using the maximum-likelihood.
+
+SECR models the detection locations and the histories of marked animals, allowing you to estimate population density and to fit a model to show how probability declines with distance from each detector, including spatial/temporal trends (Efford and Fewster, 2012).
+
+Detection functions describe the probability of detection as a given detector declines with distance (non-euclidean) from animals activity centre, the most commonly used is Half-Normal (HN) (Efford and Schofield, 2022).
+
+
+- Traps = detector coordinates & type
+- capthist = detection histories per individual
+- mask = habitat grid for the likelihood
+
+::: {.callout-note}
+The **secr** R package assumes the population is *closed* during the sampling period so there is no movement out of the area - no births, deaths, immigration or emigration occurs (Efford and Schofield, 2022). 
+:::
+
+1. First install from CRAN: install.packages("secr")
+2. Load package: library(secr)
+3. List all available detection functions: ?detectfn
+
+---
+
+## Detectors & Data
+
+Data from spectograms, collected from northern-white cheeked gibbons calls in Laos. 
 
 ![A Gibbon call in a spectogram (Clink et al., 2021)](outspectogram.jpeg)
 
@@ -20,57 +45,44 @@ The capture history data needs to have the columns: session, animal ID, occasion
 Animal IDs must be **unique** within a session.Otherwise use multi-season capthist objects.
 :::
 
-## Data Processing
-Second section
-
-- 1
-- 2
-- 3
-
 ---
 
-## SECR Package
-Spatially Explicit Capture Recapture
+## secr.fit() and Model Selection
+The fitted secr model:
+fit0 <- secr.fit(ch,mask = mask, 
+                 model = list(D~1, g0~1, sigma~1), detectfn = "HN")
 
-Estimate the density and size of spatially distributed animal populations from detector arrays via passive acoustic monitors (PAMs), using maximum-likelihood SECR models.
-SECR models the detection locations and the histories of marked animals, allowing you to estimate population density and to fit a model to show how probability declines with distance from each detector, including spatial/temporal trends (Efford and Fewster, 2012).
-
-Detection functions describe the probability of detection as a given detector declines with distance (non-euclidean) from animals activity centre, the most commonly used is Half-Normal (HN) (Efford and Schofield, 2022).
-
-::: {.callout-note}
-The **secr** R package assumes the population is *closed* during the sampling period so there is no movement out of the area - no births, deaths, immigration or emigration occurs (Efford and Schofield, 2022). 
-:::
-
-- 1. First install from CRAN: install.packages("secr")
-- 2. Load package: library(secr)
-- 3. List all available detection functions: ?detectfn
+Now add covariates to the fitted model:
+fitB <- secr.fit(ch, model=list(D~1, g0~b, sigma~1)) 
 
 ---
 
 ## Model Validation
 
-- Check convergence
-- Inspect parameter estimates → predict() w// 95% CIs
-- Goodness of fit → Pearson chi-squared test
-- Model Comparison → AIC()
-- Density estimates
+- Inspect parameter estimates → predict(fit0) w// 95% CIs
+- Model Comparison → AIC(fit0,fitB)
+- Density estimates → region.N(fit0)
 
 ---
 
-## Data Visualisation
+## Microphone Arrays & Signal Strength
+
+---
+
+## Example and ACRE Package
 
 ::: {.grid}
 
 ::: {.g-col-6}
 ### Project 1
-Density estimates. 
+Live Demo with the Ovenbird dataset.
 
 [View more →](#)
 :::
 
 ::: {.g-col-6}
 ### Project 2
-Goodness of fit.
+Acoustic data package "acre".
 
 [View more →](#)
 :::
@@ -80,9 +92,7 @@ Goodness of fit.
 ---
 ## Further Reading
 
-If you want extra reading/clarification for this package then see the GitHub page of the creator, Murray Efford. 
-
-[Murray Efford →](https://github.com/MurrayEfford/secr/)
+Visit the GitHub page of the creator,[Murray Efford →](https://github.com/MurrayEfford/secr/)
 
 ## References
 
