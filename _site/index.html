@@ -174,6 +174,12 @@ Note
 <p>The <strong>secr</strong> R package assumes the population is <em>closed</em> during the sampling period so there is no movement out of the area - no births, deaths, immigration or emigration occurs (Efford and Schofield, 2022).</p>
 </div>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="code2.jpg" class="img-fluid figure-img"></p>
+<figcaption>Installation R code</figcaption>
+</figure>
+</div>
 <ol type="1">
 <li>First install from CRAN: install.packages(“secr”)</li>
 <li>Load package: library(secr)</li>
@@ -183,13 +189,6 @@ Note
 </section>
 <section id="detectors-data" class="level2">
 <h2 class="anchored" data-anchor-id="detectors-data">Detectors &amp; Data</h2>
-<p>Data from spectograms, collected from northern-white cheeked gibbons calls in Laos.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="outspectogram.jpeg" class="img-fluid figure-img"></p>
-<figcaption>A Gibbon call in a spectogram (Clink et al., 2021)</figcaption>
-</figure>
-</div>
 <p>SECR needs a traps object (detector locations) and a capthist object (detection histories). This can be done with a csv file, or from acoustic detectors, only the detector type needs to be changed from proximity to signal.</p>
 <p>traps &lt;- read.traps.(“detector.csv”, detector = “proximity”)</p>
 <p>The capture history data needs to have the columns: session, animal ID, occasion and detector ID.</p>
@@ -203,7 +202,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Animal IDs must be <strong>unique</strong> within a session.Otherwise use multi-season capthist objects.</p>
+<p>Animal IDs must be <strong>unique</strong> within a session. Otherwise use multi-season capthist objects.</p>
 </div>
 </div>
 <hr>
@@ -233,7 +232,12 @@ Note
 <section id="example-with-secr-package" class="level3 g-col-6">
 <h3 class="anchored" data-anchor-id="example-with-secr-package">Example with “secr” package</h3>
 <p>Live Demo with the Ovenbird dataset.</p>
-<p><a href="#">View more →</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="coderun.jpg" class="img-fluid figure-img"></p>
+<figcaption>Example R code</figcaption>
+</figure>
+</div>
 </section>
 <section id="overview-of-acre" class="level3 g-col-6">
 <h3 class="anchored" data-anchor-id="overview-of-acre">Overview of “acre”</h3>
@@ -245,7 +249,7 @@ Note
 </section>
 <section id="further-reading" class="level2">
 <h2 class="anchored" data-anchor-id="further-reading">Further Reading</h2>
-<p>Visit the GitHub page of the creator,<a href="https://github.com/MurrayEfford/secr/">Murray Efford →</a></p>
+<p>Visit the GitHub page of the creator, <a href="https://github.com/MurrayEfford/secr/">Murray Efford →</a></p>
 </section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>

@@ -13,7 +13,6 @@ SECR models the detection locations and the histories of marked animals, allowin
 
 Detection functions describe the probability of detection as a given detector declines with distance (non-euclidean) from animals activity centre, the most commonly used is Half-Normal (HN) (Efford and Schofield, 2022).
 
-
 - Traps = detector coordinates & type
 - capthist = detection histories per individual
 - mask = habitat grid for the likelihood
@@ -22,17 +21,15 @@ Detection functions describe the probability of detection as a given detector de
 The **secr** R package assumes the population is *closed* during the sampling period so there is no movement out of the area - no births, deaths, immigration or emigration occurs (Efford and Schofield, 2022). 
 :::
 
-1. First install from CRAN: install.packages("secr")
-2. Load package: library(secr)
-3. List all available detection functions: ?detectfn
+1. First install the package from CRAN
+2. Load the secr package
+3. List all available detection functions with ?detectfn
+
+![Installation R code](code2.jpg)
 
 ---
 
 ## Detectors & Data
-
-Data from spectograms, collected from northern-white cheeked gibbons calls in Laos. 
-
-![A Gibbon call in a spectogram (Clink et al., 2021)](outspectogram.jpeg)
 
 SECR needs a traps object (detector locations) and a capthist object (detection histories). This can be done with a csv file, or from acoustic detectors, only the detector type needs to be changed from proximity to signal.
 
@@ -41,7 +38,7 @@ traps <- read.traps.("detector.csv", detector = "proximity")
 The capture history data needs to have the columns: session, animal ID, occasion and detector ID.
 
 ::: {.callout-note}
-Animal IDs must be **unique** within a session.Otherwise use multi-season capthist objects.
+Animal IDs must be **unique** within a session. Otherwise use multi-season capthist objects.
 :::
 
 ---
@@ -91,7 +88,7 @@ Important notes on using this package for acoustics.
 ---
 ## Further Reading
 
-Visit the GitHub page of the creator,[Murray Efford →](https://github.com/MurrayEfford/secr/)
+Visit the GitHub page of the creator, [Murray Efford →](https://github.com/MurrayEfford/secr/)
 
 ## References
 
