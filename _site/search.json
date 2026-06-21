@@ -39,7 +39,7 @@
     "href": "index.html#secr-package",
     "title": "Portfolio Quarto Website",
     "section": "SECR Package",
-    "text": "SECR Package\nSpatially Explicit Capture Recapture\nEstimate the density and size of spatially distributed animal populations from detector arrays via passive acoustic monitors (PAMs), using the maximum-likelihood.\nSECR models the detection locations and the histories of marked animals, allowing you to estimate population density and to fit a model to show how probability declines with distance from each detector, including spatial/temporal trends (Efford and Fewster, 2012).\nDetection functions describe the probability of detection as a given detector declines with distance (non-euclidean) from animals activity centre, the most commonly used is Half-Normal (HN) (Efford and Schofield, 2022).\n\nTraps = detector coordinates & type\ncapthist = detection histories per individual\nmask = habitat grid for the likelihood\n\n\n\n\n\n\n\nNote\n\n\n\nThe secr R package assumes the population is closed during the sampling period so there is no movement out of the area - no births, deaths, immigration or emigration occurs (Efford and Schofield, 2022).\n\n\n\n\n\nInstallation R code\n\n\n\nFirst install from CRAN: install.packages(“secr”)\nLoad package: library(secr)\nList all available detection functions: ?detectfn"
+    "text": "SECR Package\nSpatially Explicit Capture Recapture\nEstimate the density and size of spatially distributed animal populations from detector arrays via passive acoustic monitors (PAMs), using the maximum-likelihood.\nSECR models the detection locations and the histories of marked animals, allowing you to estimate population density and to fit a model to show how probability declines with distance from each detector, including spatial/temporal trends (Efford and Fewster, 2012).\nDetection functions describe the probability of detection as a given detector declines with distance (non-euclidean) from animals activity centre, the most commonly used is Half-Normal (HN) (Efford and Schofield, 2022).\n\nTraps = detector coordinates & type\ncapthist = detection histories per individual\nmask = habitat grid for the likelihood\n\n\n\n\n\n\n\nNote\n\n\n\nThe secr R package assumes the population is closed during the sampling period so there is no movement out of the area - no births, deaths, immigration or emigration occurs (Efford and Schofield, 2022).\n\n\n\nFirst install the package from CRAN\nLoad the secr package\nList all available detection functions with ?detectfn\n\n\n\n\nInstallation R code"
   },
   {
     "objectID": "index.html#references",
@@ -165,7 +165,7 @@
     "href": "index.html#example-and-acre-package",
     "title": "Portfolio Quarto Website",
     "section": "Example and ACRE Package",
-    "text": "Example and ACRE Package\n\n\nExample with “secr” package\nLive Demo with the Ovenbird dataset.\n\n\n\nExample R code\n\n\n\n\nOverview of “acre”\nImportant notes on using this package for acoustics.\nView more →"
+    "text": "Example and ACRE Package\n\n\nExample with “secr” package\nLive Demo with the Ovenbird dataset.\nView more →\n\n\nOverview of “acre”\nImportant notes on using this package for acoustics.\nView more →"
   },
   {
     "objectID": "index.html#fitting-the-model",

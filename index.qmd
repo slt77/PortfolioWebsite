@@ -41,6 +41,8 @@ The capture history data needs to have the columns: session, animal ID, occasion
 Animal IDs must be **unique** within a session. Otherwise use multi-season capthist objects.
 :::
 
+![Detection Trap R code](trapscode.jpeg)
+
 ---
 
 ## Fitting the Model
@@ -50,6 +52,8 @@ fit0 <- secr.fit(ch,mask = mask,
 
 Now add covariates to the fitted model:
 fitB <- secr.fit(ch, model=list(D~1, g0~b, sigma~1)) 
+
+![Fitting the model code](fitcode.jpeg)
 
 ---
 
@@ -62,6 +66,8 @@ fitB <- secr.fit(ch, model=list(D~1, g0~b, sigma~1))
 ---
 
 ## Microphone Arrays & Signal Strength
+
+![Microphone code](miccode.jpg)
 
 ---
 
