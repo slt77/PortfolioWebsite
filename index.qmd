@@ -41,7 +41,8 @@ The capture history data needs to have the columns: session, animal ID, occasion
 Animal IDs must be **unique** within a session. Otherwise use multi-season capthist objects.
 :::
 
-![Detection Trap R code](trapscode.jpeg)
+![Detector Location code](trapscode.jpeg)
+
 
 ---
 
