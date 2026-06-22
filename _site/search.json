@@ -180,5 +180,19 @@
     "title": "Portfolio Quarto Website",
     "section": "Model Validation & Selection",
     "text": "Model Validation & Selection\n\nInspect parameter estimates → predict(fit0) w// 95% CIs\nModel Comparison → AIC(fit0, fitB)\nDensity estimates → region.N(fit0)\n\n\n\n\nModel validation"
+  },
+  {
+    "objectID": "demo.test.html",
+    "href": "demo.test.html",
+    "title": "demotest",
+    "section": "",
+    "text": "## Load Data\n```{r} #| message: false #| warning: false library(secr) data(ovenbird) summary(ovenCH) ```"
+  },
+  {
+    "objectID": "demo.test.html#secr-example",
+    "href": "demo.test.html#secr-example",
+    "title": "demotest",
+    "section": "",
+    "text": "## Load Data\n```{r} #| message: false #| warning: false library(secr) data(ovenbird) summary(ovenCH) ```"
   }
 ]
