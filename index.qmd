@@ -101,7 +101,7 @@ Important notes on using this package for acoustics.
 ---
 ## Further Reading
 
-Visit the GitHub page of the creator, [Murray Efford →](https://github.com/MurrayEfford/secr/)
+Visit the GitHub page of the creator, [Murray Efford](https://github.com/MurrayEfford/secr/)
 
 ## References
 
