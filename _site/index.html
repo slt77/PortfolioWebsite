@@ -193,14 +193,54 @@ Note
 </section>
 <section id="detectors-data" class="level2">
 <h2 class="anchored" data-anchor-id="detectors-data">Detectors &amp; Data</h2>
-<p>SECR needs a traps object (detector locations) and a capthist object (detection histories). This can be done with a csv file, or from acoustic detectors, only the detector type needs to be changed from proximity to signal.</p>
+<p>SECR needs a traps object (detector locations) and a capthist object (detection histories). This can be done with a csv file, or from different types of detectors. Each detector type shows how the detection data is recorded and how the likelihood is constructed.</p>
 <p>Detector types:</p>
-<ul>
-<li><p>multi = trap caching multiple animals.</p></li>
-<li><p>proximity = presence without movement restriction</p></li>
-<li><p>signal = detection and acoustic signal strength</p></li>
-<li><p>polygon = searched-area counts</p></li>
-</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 38%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><span class="smallcaps">Type</span></th>
+<th><span class="smallcaps">Description</span></th>
+<th><span class="smallcaps">Common Use</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>single</td>
+<td>Live trap - catches one animal per occasion</td>
+<td>Small mammal pitfall</td>
+</tr>
+<tr class="even">
+<td>multi</td>
+<td>Live trap - catches multiple animals simultaneously</td>
+<td>Box traps</td>
+</tr>
+<tr class="odd">
+<td>proximity</td>
+<td>Presence without restricting movement</td>
+<td>Camera traps, hair snags</td>
+</tr>
+<tr class="even">
+<td>count</td>
+<td>Proximity detector allowing more than one detection per occasion</td>
+<td>Passive sensors</td>
+</tr>
+<tr class="odd">
+<td>signal</td>
+<td>Detection with acoustic signal strength at each detector</td>
+<td>Microphone arrays</td>
+</tr>
+<tr class="even">
+<td>polygon</td>
+<td>Searched area counts</td>
+<td>Transect surveys</td>
+</tr>
+</tbody>
+</table>
 <p>The capture history data needs to have the columns: session, animal ID, occasion and detector ID.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -215,6 +255,7 @@ Note
 <p>Animal IDs must be <strong>unique</strong> within a session. Otherwise use multi-season capthist objects.</p>
 </div>
 </div>
+<p>A mask is a grid of habitat points extending beyond the detector array, covering all activity centres.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="code2.jpg" class="img-fluid figure-img"></p>
@@ -225,20 +266,21 @@ Note
 </section>
 <section id="fitting-the-model" class="level2">
 <h2 class="anchored" data-anchor-id="fitting-the-model">Fitting the Model</h2>
-<p>Most models are fitted with the default half-normal (HN) detector. Multiple models are created with different covariates, to find the optimal model.</p>
+<p>Most models are fitted with the default half-normal (HN) detector. Multiple models are created with different covariates, to find the optimal model. The three principal parameters are D (density), g0 (baseline detection probability at distance 0) and sigma (spatial scale of detection function in metres). First start with a baseline model, then add covariates and compare models.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="codefit.jpg" class="img-fluid figure-img"></p>
 <figcaption>Fitting the model code</figcaption>
 </figure>
 </div>
+<p>Common predictors are <strong>bk</strong> (behavioral response), <strong>t</strong> (temporal variation) and <strong>Sex</strong> (individual covariate).</p>
 <hr>
 </section>
 <section id="model-validation-selection" class="level2">
 <h2 class="anchored" data-anchor-id="model-validation-selection">Model Validation &amp; Selection</h2>
 <ul>
-<li>Inspect parameter estimates → predict(fit0) w// 95% CIs</li>
-<li>Model Comparison → AIC(fit0, fitB)</li>
+<li>Inspect parameter estimates → predict(fit0) with 95% confidence intervals</li>
+<li>Model Comparison → AIC(fit0, fit1)</li>
 <li>Density estimates → region.N(fit0)</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
@@ -251,7 +293,7 @@ Note
 </section>
 <section id="microphone-arrays-signal-strength" class="level2">
 <h2 class="anchored" data-anchor-id="microphone-arrays-signal-strength">Microphone Arrays &amp; Signal Strength</h2>
-<p>Signal strength detectors record a binary detection to improve accuracy of locations, measured in dB level. The detector type must be changed to signal.</p>
+<p>Signal strength detectors record a binary detection to improve the accuracy and precisions of locations, measured in dB level. The detector type must be changed to signal.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="miccode.jpg" class="img-fluid figure-img"></p>

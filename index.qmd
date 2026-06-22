@@ -36,7 +36,7 @@ SECR needs a traps object (detector locations) and a capthist object (detection 
 
 Detector types:
 
-| Type | Description | Common Use |
+| [Type]{.smallcaps} | [Description]{.smallcaps} | [Common Use]{.smallcaps} |
 |-----------------|----------------------------|----------------------------|
 | single | Live trap - catches one animal per occasion | Small mammal pitfall |
 | multi | Live trap - catches multiple animals simultaneously | Box traps |

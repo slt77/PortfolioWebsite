@@ -144,7 +144,7 @@
     "href": "index.html#detectors-data",
     "title": "Portfolio Quarto Website",
     "section": "Detectors & Data",
-    "text": "Detectors & Data\nSECR needs a traps object (detector locations) and a capthist object (detection histories). This can be done with a csv file, or from acoustic detectors, only the detector type needs to be changed from proximity to signal.\nDetector types:\n\nmulti = trap caching multiple animals.\nproximity = presence without movement restriction\nsignal = detection and acoustic signal strength\npolygon = searched-area counts\n\nThe capture history data needs to have the columns: session, animal ID, occasion and detector ID.\n\n\n\n\n\n\nNote\n\n\n\nAnimal IDs must be unique within a session. Otherwise use multi-season capthist objects.\n\n\n\n\n\nDetector Location code"
+    "text": "Detectors & Data\nSECR needs a traps object (detector locations) and a capthist object (detection histories). This can be done with a csv file, or from different types of detectors. Each detector type shows how the detection data is recorded and how the likelihood is constructed.\nDetector types:\n\n\n\n\n\n\n\n\nType\nDescription\nCommon Use\n\n\n\n\nsingle\nLive trap - catches one animal per occasion\nSmall mammal pitfall\n\n\nmulti\nLive trap - catches multiple animals simultaneously\nBox traps\n\n\nproximity\nPresence without restricting movement\nCamera traps, hair snags\n\n\ncount\nProximity detector allowing more than one detection per occasion\nPassive sensors\n\n\nsignal\nDetection with acoustic signal strength at each detector\nMicrophone arrays\n\n\npolygon\nSearched area counts\nTransect surveys\n\n\n\nThe capture history data needs to have the columns: session, animal ID, occasion and detector ID.\n\n\n\n\n\n\nNote\n\n\n\nAnimal IDs must be unique within a session. Otherwise use multi-season capthist objects.\n\n\nA mask is a grid of habitat points extending beyond the detector array, covering all activity centres.\n\n\n\nDetector Location code"
   },
   {
     "objectID": "index.html#secr.fit-and-model-selection",
@@ -158,7 +158,7 @@
     "href": "index.html#microphone-arrays-signal-strength",
     "title": "Portfolio Quarto Website",
     "section": "Microphone Arrays & Signal Strength",
-    "text": "Microphone Arrays & Signal Strength\nSignal strength detectors record a binary detection to improve accuracy of locations, measured in dB level. The detector type must be changed to signal.\n\n\n\nModel validation\n\n\n\nbeta0 = source level at 1m\nbeta1 = attenuation slope (dB/m)\n\n\n\n\n\n\n\nNote\n\n\n\nFor acoustic data the acre package can be used instead of secr, this allows for more efficient data analysis due to being created specifically for acoustics. See below"
+    "text": "Microphone Arrays & Signal Strength\nSignal strength detectors record a binary detection to improve the accuracy and precisions of locations, measured in dB level. The detector type must be changed to signal.\n\n\n\nModel validation\n\n\n\nbeta0 = source level at 1m\nbeta1 = attenuation slope (dB/m)\n\n\n\n\n\n\n\nNote\n\n\n\nFor acoustic data the acre package can be used instead of secr, this allows for more efficient data analysis due to being created specifically for acoustics. See below"
   },
   {
     "objectID": "index.html#example-and-acre-package",
@@ -172,14 +172,14 @@
     "href": "index.html#fitting-the-model",
     "title": "Portfolio Quarto Website",
     "section": "Fitting the Model",
-    "text": "Fitting the Model\nMost models are fitted with the default half-normal (HN) detector. Multiple models are created with different covariates, to find the optimal model.\n\n\n\nFitting the model code"
+    "text": "Fitting the Model\nMost models are fitted with the default half-normal (HN) detector. Multiple models are created with different covariates, to find the optimal model. The three principal parameters are D (density), g0 (baseline detection probability at distance 0) and sigma (spatial scale of detection function in metres). First start with a baseline model, then add covariates and compare models.\n\n\n\nFitting the model code\n\n\nCommon predictors are bk (behavioral response), t (temporal variation) and Sex (individual covariate)."
   },
   {
     "objectID": "index.html#model-validation-selection",
     "href": "index.html#model-validation-selection",
     "title": "Portfolio Quarto Website",
     "section": "Model Validation & Selection",
-    "text": "Model Validation & Selection\n\nInspect parameter estimates → predict(fit0) w// 95% CIs\nModel Comparison → AIC(fit0, fitB)\nDensity estimates → region.N(fit0)\n\n\n\n\nModel validation"
+    "text": "Model Validation & Selection\n\nInspect parameter estimates → predict(fit0) with 95% confidence intervals\nModel Comparison → AIC(fit0, fit1)\nDensity estimates → region.N(fit0)\n\n\n\n\nModel validation"
   },
   {
     "objectID": "demo.test.html",
