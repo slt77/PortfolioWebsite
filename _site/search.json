@@ -144,7 +144,7 @@
     "href": "index.html#detectors-data",
     "title": "Portfolio Quarto Website",
     "section": "Detectors & Data",
-    "text": "Detectors & Data\nSECR needs a traps object (detector locations) and a capthist object (detection histories). This can be done with a csv file, or from acoustic detectors, only the detector type needs to be changed from proximity to signal.\nThe capture history data needs to have the columns: session, animal ID, occasion and detector ID.\n\n\n\n\n\n\nNote\n\n\n\nAnimal IDs must be unique within a session. Otherwise use multi-season capthist objects.\n\n\n\n\n\nDetector Location code"
+    "text": "Detectors & Data\nSECR needs a traps object (detector locations) and a capthist object (detection histories). This can be done with a csv file, or from acoustic detectors, only the detector type needs to be changed from proximity to signal.\nDetector types:\n\nmulti = trap caching multiple animals.\nproximity = presence without movement restriction\nsignal = detection and acoustic signal strength\npolygon = searched-area counts\n\nThe capture history data needs to have the columns: session, animal ID, occasion and detector ID.\n\n\n\n\n\n\nNote\n\n\n\nAnimal IDs must be unique within a session. Otherwise use multi-season capthist objects.\n\n\n\n\n\nDetector Location code"
   },
   {
     "objectID": "index.html#secr.fit-and-model-selection",

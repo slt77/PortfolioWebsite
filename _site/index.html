@@ -194,6 +194,13 @@ Note
 <section id="detectors-data" class="level2">
 <h2 class="anchored" data-anchor-id="detectors-data">Detectors &amp; Data</h2>
 <p>SECR needs a traps object (detector locations) and a capthist object (detection histories). This can be done with a csv file, or from acoustic detectors, only the detector type needs to be changed from proximity to signal.</p>
+<p>Detector types:</p>
+<ul>
+<li><p>multi = trap caching multiple animals.</p></li>
+<li><p>proximity = presence without movement restriction</p></li>
+<li><p>signal = detection and acoustic signal strength</p></li>
+<li><p>polygon = searched-area counts</p></li>
+</ul>
 <p>The capture history data needs to have the columns: session, animal ID, occasion and detector ID.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">

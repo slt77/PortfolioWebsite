@@ -5,6 +5,7 @@ title: "Portfolio Quarto Website"
 **AIM: To improve model validation, data processing, data visualisation with the SECR package**
 
 ## SECR Package
+
 Spatially Explicit Capture Recapture
 
 Estimate the density and size of spatially distributed animal populations from detector arrays via passive acoustic monitors (PAMs) and camera traps, using the maximum-likelihood.
@@ -17,40 +18,49 @@ Detection functions describe the probability of detection as a given detector de
 - capthist = detection histories per individual
 - mask = habitat grid for the likelihood
 
-::: {.callout-note}
-The **secr** R package assumes the population is *closed* during the sampling period so there is no movement out of the area - no births, deaths, immigration or emigration occurs (Efford and Schofield, 2022). 
+::: callout-note
+The **secr** R package assumes the population is *closed* during the sampling period so there is no movement out of the area - no births, deaths, immigration or emigration occurs (Efford and Schofield, 2022).
 :::
 
-1. First install the package from CRAN
-2. Load the secr package
-3. List all available detection functions with ?detectfn
+1.  First install the package from CRAN
+2.  Load the secr package
+3.  List all available detection functions with ?detectfn
 
 ![Installation R code](code1.jpg)
 
----
+------------------------------------------------------------------------
 
 ## Detectors & Data
 
 SECR needs a traps object (detector locations) and a capthist object (detection histories). This can be done with a csv file, or from acoustic detectors, only the detector type needs to be changed from proximity to signal.
 
+Detector types:
+
+- multi = trap caching multiple animals.
+
+- proximity = presence without movement restriction
+
+- signal = detection and acoustic signal strength
+
+- polygon = searched-area counts
+
 The capture history data needs to have the columns: session, animal ID, occasion and detector ID.
 
-::: {.callout-note}
+::: callout-note
 Animal IDs must be **unique** within a session. Otherwise use multi-season capthist objects.
 :::
 
 ![Detector Location code](code2.jpg)
 
-
----
+------------------------------------------------------------------------
 
 ## Fitting the Model
 
-Most models are fitted with the default half-normal (HN) detector. Multiple models are created with different covariates, to find the optimal model. 
+Most models are fitted with the default half-normal (HN) detector. Multiple models are created with different covariates, to find the optimal model.
 
 ![Fitting the model code](codefit.jpg)
 
----
+------------------------------------------------------------------------
 
 ## Model Validation & Selection
 
@@ -60,44 +70,43 @@ Most models are fitted with the default half-normal (HN) detector. Multiple mode
 
 ![Model validation](codeaic.jpg)
 
----
+------------------------------------------------------------------------
 
 ## Microphone Arrays & Signal Strength
 
-Signal strength detectors record a binary detection to improve accuracy of locations, measured in dB level. The detector type must be changed to signal. 
+Signal strength detectors record a binary detection to improve accuracy of locations, measured in dB level. The detector type must be changed to signal.
 
 ![Model validation](miccode.jpg)
 
 - beta0 = source level at 1m
 - beta1 = attenuation slope (dB/m)
 
-
-::: {.callout-note}
+::: callout-note
 For acoustic data the **acre** package can be used instead of secr, this allows for more efficient data analysis due to being created specifically for acoustics. *See below*
 :::
 
----
+------------------------------------------------------------------------
 
 ## Example and ACRE Package
 
-::: {.grid}
-
-::: {.g-col-6}
+::::: grid
+::: g-col-6
 ### Example with "secr" package
+
 Live Demo with the Ovenbird dataset.
 
 [View →](Example.qmd)
 :::
 
-::: {.g-col-6}
+::: g-col-6
 ### Overview of "acre"
+
 Important notes on using this package for acoustics.
-
 :::
+:::::
 
-:::
+------------------------------------------------------------------------
 
----
 ## Further Reading
 
 For SECR visit the GitHub page of the creator, [Murray Efford](https://github.com/MurrayEfford/secr/)
@@ -106,7 +115,7 @@ For ACRE visit the GitHub page of the creator, [Ben Stephenson](https://github.c
 
 ## References
 
-Clink, D.J., Zafar, M., Ahmad, A.H. and Lau, A.R. (2021). Limited Evidence for Individual Signatures or Site-Level Patterns pf Variation in Male Northern Gray Gibbon (Hylobates funereus) Duet Codas. International Journal of Primatology, 42(12), pp:1-19. DOI: 10.1007/s10764-021-00250-2. 
+Clink, D.J., Zafar, M., Ahmad, A.H. and Lau, A.R. (2021). Limited Evidence for Individual Signatures or Site-Level Patterns pf Variation in Male Northern Gray Gibbon (Hylobates funereus) Duet Codas. International Journal of Primatology, 42(12), pp:1-19. DOI: 10.1007/s10764-021-00250-2.
 
 Efford, M.G. and Fewster, R.M. (2012). Estimating population size by spatially explicit capture-recapture. Oikos, 122(6), pp. 918-928. DOI: 10.1111/j.1600-0706.2012.20440.x.
 
