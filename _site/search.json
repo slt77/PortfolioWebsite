@@ -144,7 +144,7 @@
     "href": "index.html#detectors-data",
     "title": "Portfolio Quarto Website",
     "section": "Detectors & Data",
-    "text": "Detectors & Data\nSECR needs a traps object (detector locations) and a capthist object (detection histories). This can be done with a csv file, or from acoustic detectors, only the detector type needs to be changed from proximity to signal.\ntraps &lt;- read.traps.(“detector.csv”, detector = “proximity”)\nThe capture history data needs to have the columns: session, animal ID, occasion and detector ID.\n\n\n\n\n\n\nNote\n\n\n\nAnimal IDs must be unique within a session. Otherwise use multi-season capthist objects.\n\n\n\n\n\nDetector Location code"
+    "text": "Detectors & Data\nSECR needs a traps object (detector locations) and a capthist object (detection histories). This can be done with a csv file, or from acoustic detectors, only the detector type needs to be changed from proximity to signal.\nThe capture history data needs to have the columns: session, animal ID, occasion and detector ID.\n\n\n\n\n\n\nNote\n\n\n\nAnimal IDs must be unique within a session. Otherwise use multi-season capthist objects.\n\n\n\n\n\nDetector Location code"
   },
   {
     "objectID": "index.html#secr.fit-and-model-selection",
@@ -158,7 +158,7 @@
     "href": "index.html#microphone-arrays-signal-strength",
     "title": "Portfolio Quarto Website",
     "section": "Microphone Arrays & Signal Strength",
-    "text": "Microphone Arrays & Signal Strength\nMicrophone paragraph\n\n\n\nModel validation"
+    "text": "Microphone Arrays & Signal Strength\nSignal strength detectors record a binary detection to improve accuracy of locations, measured in dB level. The detector type must be changed to signal.\n\n\n\nModel validation\n\n\n\nbeta0 = source level at 1m\nbeta1 = attenuation slope (dB/m)\n\n\n\n\n\n\n\nNote\n\n\n\nFor acoustic data the acre package can be used instead of secr, this allows for more efficient data analysis due to being created specifically for acoustics. See below"
   },
   {
     "objectID": "index.html#example-and-acre-package",
@@ -172,7 +172,7 @@
     "href": "index.html#fitting-the-model",
     "title": "Portfolio Quarto Website",
     "section": "Fitting the Model",
-    "text": "Fitting the Model\nThe fitted secr model: fit0 &lt;- secr.fit(ch,mask = mask, model = list(D~1, g0~1, sigma~1), detectfn = “HN”)\nNow add covariates to the fitted model: fitB &lt;- secr.fit(ch, model=list(D~1, g0~b, sigma~1))\n\n\n\nFitting the model code"
+    "text": "Fitting the Model\nMost models are fitted with the default half-normal (HN) detector. Multiple models are created with different covariates, to find the optimal model.\n\n\n\nFitting the model code"
   },
   {
     "objectID": "index.html#model-validation-selection",

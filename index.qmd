@@ -33,8 +33,6 @@ The **secr** R package assumes the population is *closed* during the sampling pe
 
 SECR needs a traps object (detector locations) and a capthist object (detection histories). This can be done with a csv file, or from acoustic detectors, only the detector type needs to be changed from proximity to signal.
 
-traps <- read.traps.("detector.csv", detector = "proximity")
-
 The capture history data needs to have the columns: session, animal ID, occasion and detector ID.
 
 ::: {.callout-note}
@@ -47,12 +45,8 @@ Animal IDs must be **unique** within a session. Otherwise use multi-season capth
 ---
 
 ## Fitting the Model
-The fitted secr model:
-fit0 <- secr.fit(ch,mask = mask, 
-                 model = list(D~1, g0~1, sigma~1), detectfn = "HN")
 
-Now add covariates to the fitted model:
-fitB <- secr.fit(ch, model=list(D~1, g0~b, sigma~1)) 
+Most models are fitted with the default half-normal (HN) detector. Multiple models are created with different covariates, to find the optimal model. 
 
 ![Fitting the model code](codefit.jpg)
 
@@ -70,9 +64,17 @@ fitB <- secr.fit(ch, model=list(D~1, g0~b, sigma~1))
 
 ## Microphone Arrays & Signal Strength
 
-Microphone paragraph
+Signal strength detectors record a binary detection to improve accuracy of locations, measured in dB level. The detector type must be changed to signal. 
 
 ![Model validation](miccode.jpg)
+
+- beta0 = source level at 1m
+- beta1 = attenuation slope (dB/m)
+
+
+::: {.callout-note}
+For acoustic data the **acre** package can be used instead of secr, this allows for more efficient data analysis due to being created specifically for acoustics. *See below*
+:::
 
 ---
 

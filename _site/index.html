@@ -190,7 +190,6 @@ Note
 <section id="detectors-data" class="level2">
 <h2 class="anchored" data-anchor-id="detectors-data">Detectors &amp; Data</h2>
 <p>SECR needs a traps object (detector locations) and a capthist object (detection histories). This can be done with a csv file, or from acoustic detectors, only the detector type needs to be changed from proximity to signal.</p>
-<p>traps &lt;- read.traps.(“detector.csv”, detector = “proximity”)</p>
 <p>The capture history data needs to have the columns: session, animal ID, occasion and detector ID.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -215,8 +214,7 @@ Note
 </section>
 <section id="fitting-the-model" class="level2">
 <h2 class="anchored" data-anchor-id="fitting-the-model">Fitting the Model</h2>
-<p>The fitted secr model: fit0 &lt;- secr.fit(ch,mask = mask, model = list(D~1, g0~1, sigma~1), detectfn = “HN”)</p>
-<p>Now add covariates to the fitted model: fitB &lt;- secr.fit(ch, model=list(D~1, g0~b, sigma~1))</p>
+<p>Most models are fitted with the default half-normal (HN) detector. Multiple models are created with different covariates, to find the optimal model.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="codefit.jpg" class="img-fluid figure-img"></p>
@@ -242,12 +240,29 @@ Note
 </section>
 <section id="microphone-arrays-signal-strength" class="level2">
 <h2 class="anchored" data-anchor-id="microphone-arrays-signal-strength">Microphone Arrays &amp; Signal Strength</h2>
-<p>Microphone paragraph</p>
+<p>Signal strength detectors record a binary detection to improve accuracy of locations, measured in dB level. The detector type must be changed to signal.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="miccode.jpg" class="img-fluid figure-img"></p>
 <figcaption>Model validation</figcaption>
 </figure>
+</div>
+<ul>
+<li>beta0 = source level at 1m</li>
+<li>beta1 = attenuation slope (dB/m)</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For acoustic data the <strong>acre</strong> package can be used instead of secr, this allows for more efficient data analysis due to being created specifically for acoustics. <em>See below</em></p>
+</div>
 </div>
 <hr>
 </section>
