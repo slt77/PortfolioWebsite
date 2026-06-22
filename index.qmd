@@ -32,17 +32,18 @@ The **secr** R package assumes the population is *closed* during the sampling pe
 
 ## Detectors & Data
 
-SECR needs a traps object (detector locations) and a capthist object (detection histories). This can be done with a csv file, or from acoustic detectors, only the detector type needs to be changed from proximity to signal.
+SECR needs a traps object (detector locations) and a capthist object (detection histories). This can be done with a csv file, or from different types of detectors. Each detector type shows how the detection data is recorded and how the likelihood is constructed.
 
 Detector types:
 
-- multi = trap caching multiple animals.
-
-- proximity = presence without movement restriction
-
-- signal = detection and acoustic signal strength
-
-- polygon = searched-area counts
+| Type | Description | Common Use |
+|-----------------|----------------------------|----------------------------|
+| single | Live trap - catches one animal per occasion | Small mammal pitfall |
+| multi | Live trap - catches multiple animals simultaneously | Box traps |
+| proximity | Presence without restricting movement | Camera traps, hair snags |
+| count | Proximity detector allowing more than one detection per occasion | Passive sensors |
+| signal | Detection with acoustic signal strength at each detector | Microphone arrays |
+| polygon | Searched area counts | Transect surveys |
 
 The capture history data needs to have the columns: session, animal ID, occasion and detector ID.
 
@@ -50,22 +51,26 @@ The capture history data needs to have the columns: session, animal ID, occasion
 Animal IDs must be **unique** within a session. Otherwise use multi-season capthist objects.
 :::
 
+A mask is a grid of habitat points extending beyond the detector array, covering all activity centres.
+
 ![Detector Location code](code2.jpg)
 
 ------------------------------------------------------------------------
 
 ## Fitting the Model
 
-Most models are fitted with the default half-normal (HN) detector. Multiple models are created with different covariates, to find the optimal model.
+Most models are fitted with the default half-normal (HN) detector. Multiple models are created with different covariates, to find the optimal model. The three principal parameters are D (density), g0 (baseline detection probability at distance 0) and sigma (spatial scale of detection function in metres). First start with a baseline model, then add covariates and compare models.
 
 ![Fitting the model code](codefit.jpg)
+
+Common predictors are **bk** (behavioral response), **t** (temporal variation) and **Sex** (individual covariate).
 
 ------------------------------------------------------------------------
 
 ## Model Validation & Selection
 
-- Inspect parameter estimates → predict(fit0) w// 95% CIs
-- Model Comparison → AIC(fit0, fitB)
+- Inspect parameter estimates → predict(fit0) with 95% confidence intervals
+- Model Comparison → AIC(fit0, fit1)
 - Density estimates → region.N(fit0)
 
 ![Model validation](codeaic.jpg)
@@ -74,7 +79,7 @@ Most models are fitted with the default half-normal (HN) detector. Multiple mode
 
 ## Microphone Arrays & Signal Strength
 
-Signal strength detectors record a binary detection to improve accuracy of locations, measured in dB level. The detector type must be changed to signal.
+Signal strength detectors record a binary detection to improve the accuracy and precisions of locations, measured in dB level. The detector type must be changed to signal.
 
 ![Model validation](miccode.jpg)
 
