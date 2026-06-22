@@ -1,7 +1,7 @@
 ---
-title: "testrun"
+title: "SECR Example"
 editor: source
 ---
 The example code from using one of the included datasets. 
 
-![Example R code](democode.jpeg)
+![](democode.jpeg)
