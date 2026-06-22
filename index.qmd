@@ -85,6 +85,7 @@ For acoustic data the **acre** package can be used instead of secr, this allows 
 ::: {.g-col-6}
 ### Example with "secr" package
 Live Demo with the Ovenbird dataset.
+[View more →](testrun.qmd)
 
 :::
 
@@ -92,6 +93,7 @@ Live Demo with the Ovenbird dataset.
 ### Overview of "acre"
 Important notes on using this package for acoustics.
 
+[View more →](#)
 :::
 
 :::

@@ -9,6 +9,8 @@ website:
         text: Home
       - href: about.qmd
         text: About
+      - href: testrun.qmd
+        text: Demo
 
 format:
   html:
