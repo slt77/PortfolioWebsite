@@ -158,7 +158,7 @@
     "href": "index.html#microphone-arrays-signal-strength",
     "title": "Portfolio Quarto Website",
     "section": "Microphone Arrays & Signal Strength",
-    "text": "Microphone Arrays & Signal Strength\n\n\n\nMicrophone code"
+    "text": "Microphone Arrays & Signal Strength\nMicrophone paragraph\n\n\n\nModel validation"
   },
   {
     "objectID": "index.html#example-and-acre-package",
@@ -179,6 +179,6 @@
     "href": "index.html#model-validation-selection",
     "title": "Portfolio Quarto Website",
     "section": "Model Validation & Selection",
-    "text": "Model Validation & Selection\n\nInspect parameter estimates → predict(fit0) w// 95% CIs\nModel Comparison → AIC(fit0, fitB)\nDensity estimates → region.N(fit0)"
+    "text": "Model Validation & Selection\n\nInspect parameter estimates → predict(fit0) w// 95% CIs\nModel Comparison → AIC(fit0, fitB)\nDensity estimates → region.N(fit0)\n\n\n\n\nModel validation"
   }
 ]

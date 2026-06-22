@@ -25,7 +25,7 @@ The **secr** R package assumes the population is *closed* during the sampling pe
 2. Load the secr package
 3. List all available detection functions with ?detectfn
 
-![Installation R code](code2.jpg)
+![Installation R code](code1.jpg)
 
 ---
 
@@ -41,7 +41,7 @@ The capture history data needs to have the columns: session, animal ID, occasion
 Animal IDs must be **unique** within a session. Otherwise use multi-season capthist objects.
 :::
 
-![Detector Location code](trapscode.jpeg)
+![Detector Location code](code2.jpg)
 
 
 ---
@@ -54,7 +54,7 @@ fit0 <- secr.fit(ch,mask = mask,
 Now add covariates to the fitted model:
 fitB <- secr.fit(ch, model=list(D~1, g0~b, sigma~1)) 
 
-![Fitting the model code](fitcode.jpeg)
+![Fitting the model code](codefit.jpg)
 
 ---
 
@@ -64,11 +64,15 @@ fitB <- secr.fit(ch, model=list(D~1, g0~b, sigma~1))
 - Model Comparison → AIC(fit0, fitB)
 - Density estimates → region.N(fit0)
 
+![Model validation](codeaic.jpg)
+
 ---
 
 ## Microphone Arrays & Signal Strength
 
-![Microphone code](miccode.jpg)
+Microphone paragraph
+
+![Model validation](miccode.jpg)
 
 ---
 
