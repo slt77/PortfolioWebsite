@@ -130,14 +130,14 @@
     "href": "about.html#academic-focus",
     "title": "About",
     "section": "Academic Focus",
-    "text": "Academic Focus\nSECR is the final stage of a project I am helping with from collected Gibbon spectograms, occurring after data processing, logistic regression, machine learning with CNNs and a shiny app.\nThis website will help you with the R package, SECR (spatially explicit capture-recapture), often used in estimating animal abundances.\nWork through the home page step-by-step, to improve understanding about data processing, model validation and the SECR package."
+    "text": "Academic Focus\nSECR is the final stage of a project I am helping with from collected Gibbon spectograms, occurring after data processing, machine learning with CNNs and a shiny app.\nThis website will help you with the R package, SECR (spatially explicit capture-recapture), used in estimating animal abundances."
   },
   {
     "objectID": "index.html#further-reading",
     "href": "index.html#further-reading",
     "title": "Portfolio Quarto Website",
     "section": "Further Reading",
-    "text": "Further Reading\nVisit the GitHub page of the creator, Murray Efford"
+    "text": "Further Reading\nFor SECR visit the GitHub page of the creator, Murray Efford\nFor ACRE visit the GitHub page of the creator, Ben Stephenson"
   },
   {
     "objectID": "index.html#detectors-data",
@@ -165,7 +165,7 @@
     "href": "index.html#example-and-acre-package",
     "title": "Portfolio Quarto Website",
     "section": "Example and ACRE Package",
-    "text": "Example and ACRE Package\n\n\nExample with “secr” package\nLive Demo with the Ovenbird dataset. View more →\n\n\nOverview of “acre”\nImportant notes on using this package for acoustics.\nView more →"
+    "text": "Example and ACRE Package\n\n\nExample with “secr” package\nLive Demo with the Ovenbird dataset.\nView →\n\n\nOverview of “acre”\nImportant notes on using this package for acoustics."
   },
   {
     "objectID": "index.html#fitting-the-model",
@@ -201,5 +201,12 @@
     "title": "testrun",
     "section": "",
     "text": "The example code from using one of the included datasets.\n\n\n\nExample R code"
+  },
+  {
+    "objectID": "Example.html",
+    "href": "Example.html",
+    "title": "SECR Example",
+    "section": "",
+    "text": "The example code from using one of the included datasets."
   }
 ]

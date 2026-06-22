@@ -9,7 +9,7 @@ website:
         text: Home
       - href: about.qmd
         text: About
-      - href: testrun.qmd
+      - href: Example.qmd
         text: Example
 
 format:
