@@ -7,7 +7,7 @@ title: "Portfolio Quarto Website"
 ## SECR Package
 Spatially Explicit Capture Recapture
 
-Estimate the density and size of spatially distributed animal populations from detector arrays via passive acoustic monitors (PAMs), using the maximum-likelihood.
+Estimate the density and size of spatially distributed animal populations from detector arrays via passive acoustic monitors (PAMs) and camera traps, using the maximum-likelihood.
 
 SECR models the detection locations and the histories of marked animals, allowing you to estimate population density and to fit a model to show how probability declines with distance from each detector, including spatial/temporal trends (Efford and Fewster, 2012).
 
