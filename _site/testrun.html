@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Portfolio Quarto Website – My Website</title>
+<title>testrun – My Website</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -93,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -101,8 +101,8 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./testrun.html"> 
-<span class="menu-text">Demo</span></a>
+    <a class="nav-link active" href="./testrun.html" aria-current="page"> 
+<span class="menu-text">Example</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -115,28 +115,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#secr-package" id="toc-secr-package" class="nav-link active" data-scroll-target="#secr-package">SECR Package</a></li>
-  <li><a href="#detectors-data" id="toc-detectors-data" class="nav-link" data-scroll-target="#detectors-data">Detectors &amp; Data</a></li>
-  <li><a href="#fitting-the-model" id="toc-fitting-the-model" class="nav-link" data-scroll-target="#fitting-the-model">Fitting the Model</a></li>
-  <li><a href="#model-validation-selection" id="toc-model-validation-selection" class="nav-link" data-scroll-target="#model-validation-selection">Model Validation &amp; Selection</a></li>
-  <li><a href="#microphone-arrays-signal-strength" id="toc-microphone-arrays-signal-strength" class="nav-link" data-scroll-target="#microphone-arrays-signal-strength">Microphone Arrays &amp; Signal Strength</a></li>
-  <li><a href="#example-and-acre-package" id="toc-example-and-acre-package" class="nav-link" data-scroll-target="#example-and-acre-package">Example and ACRE Package</a></li>
-  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further Reading</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Portfolio Quarto Website</h1>
+<h1 class="title">testrun</h1>
 </div>
 
 
@@ -153,150 +140,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>AIM: To improve model validation, data processing, data visualisation with the SECR package</strong></p>
-<section id="secr-package" class="level2">
-<h2 class="anchored" data-anchor-id="secr-package">SECR Package</h2>
-<p>Spatially Explicit Capture Recapture</p>
-<p>Estimate the density and size of spatially distributed animal populations from detector arrays via passive acoustic monitors (PAMs) and camera traps, using the maximum-likelihood.</p>
-<p>SECR models the detection locations and the histories of marked animals, allowing you to estimate population density and to fit a model to show how probability declines with distance from each detector, including spatial/temporal trends (Efford and Fewster, 2012).</p>
-<p>Detection functions describe the probability of detection as a given detector declines with distance (non-euclidean) from animals activity centre, the most commonly used is Half-Normal (HN) (Efford and Schofield, 2022).</p>
-<ul>
-<li>Traps = detector coordinates &amp; type</li>
-<li>capthist = detection histories per individual</li>
-<li>mask = habitat grid for the likelihood</li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The <strong>secr</strong> R package assumes the population is <em>closed</em> during the sampling period so there is no movement out of the area - no births, deaths, immigration or emigration occurs (Efford and Schofield, 2022).</p>
-</div>
-</div>
-<ol type="1">
-<li>First install the package from CRAN</li>
-<li>Load the secr package</li>
-<li>List all available detection functions with ?detectfn</li>
-</ol>
+<p>The example code from using one of the included datasets.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="code1.jpg" class="img-fluid figure-img"></p>
-<figcaption>Installation R code</figcaption>
+<p><img src="democode.jpeg" class="img-fluid figure-img"></p>
+<figcaption>Example R code</figcaption>
 </figure>
 </div>
-<hr>
-</section>
-<section id="detectors-data" class="level2">
-<h2 class="anchored" data-anchor-id="detectors-data">Detectors &amp; Data</h2>
-<p>SECR needs a traps object (detector locations) and a capthist object (detection histories). This can be done with a csv file, or from acoustic detectors, only the detector type needs to be changed from proximity to signal.</p>
-<p>The capture history data needs to have the columns: session, animal ID, occasion and detector ID.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Animal IDs must be <strong>unique</strong> within a session. Otherwise use multi-season capthist objects.</p>
-</div>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="code2.jpg" class="img-fluid figure-img"></p>
-<figcaption>Detector Location code</figcaption>
-</figure>
-</div>
-<hr>
-</section>
-<section id="fitting-the-model" class="level2">
-<h2 class="anchored" data-anchor-id="fitting-the-model">Fitting the Model</h2>
-<p>Most models are fitted with the default half-normal (HN) detector. Multiple models are created with different covariates, to find the optimal model.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="codefit.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fitting the model code</figcaption>
-</figure>
-</div>
-<hr>
-</section>
-<section id="model-validation-selection" class="level2">
-<h2 class="anchored" data-anchor-id="model-validation-selection">Model Validation &amp; Selection</h2>
-<ul>
-<li>Inspect parameter estimates → predict(fit0) w// 95% CIs</li>
-<li>Model Comparison → AIC(fit0, fitB)</li>
-<li>Density estimates → region.N(fit0)</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="codeaic.jpg" class="img-fluid figure-img"></p>
-<figcaption>Model validation</figcaption>
-</figure>
-</div>
-<hr>
-</section>
-<section id="microphone-arrays-signal-strength" class="level2">
-<h2 class="anchored" data-anchor-id="microphone-arrays-signal-strength">Microphone Arrays &amp; Signal Strength</h2>
-<p>Signal strength detectors record a binary detection to improve accuracy of locations, measured in dB level. The detector type must be changed to signal.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="miccode.jpg" class="img-fluid figure-img"></p>
-<figcaption>Model validation</figcaption>
-</figure>
-</div>
-<ul>
-<li>beta0 = source level at 1m</li>
-<li>beta1 = attenuation slope (dB/m)</li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>For acoustic data the <strong>acre</strong> package can be used instead of secr, this allows for more efficient data analysis due to being created specifically for acoustics. <em>See below</em></p>
-</div>
-</div>
-<hr>
-</section>
-<section id="example-and-acre-package" class="level2">
-<h2 class="anchored" data-anchor-id="example-and-acre-package">Example and ACRE Package</h2>
-<div class="grid">
-<section id="example-with-secr-package" class="level3 g-col-6">
-<h3 class="anchored" data-anchor-id="example-with-secr-package">Example with “secr” package</h3>
-<p>Live Demo with the Ovenbird dataset. <a href="./testrun.html">View more →</a></p>
-</section>
-<section id="overview-of-acre" class="level3 g-col-6">
-<h3 class="anchored" data-anchor-id="overview-of-acre">Overview of “acre”</h3>
-<p>Important notes on using this package for acoustics.</p>
-<p><a href="#">View more →</a></p>
-</section>
-</div>
-<hr>
-</section>
-<section id="further-reading" class="level2">
-<h2 class="anchored" data-anchor-id="further-reading">Further Reading</h2>
-<p>Visit the GitHub page of the creator, <a href="https://github.com/MurrayEfford/secr/">Murray Efford</a></p>
-</section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">References</h2>
-<p>Clink, D.J., Zafar, M., Ahmad, A.H. and Lau, A.R. (2021). Limited Evidence for Individual Signatures or Site-Level Patterns pf Variation in Male Northern Gray Gibbon (Hylobates funereus) Duet Codas. International Journal of Primatology, 42(12), pp:1-19. DOI: 10.1007/s10764-021-00250-2.</p>
-<p>Efford, M.G. and Fewster, R.M. (2012). Estimating population size by spatially explicit capture-recapture. Oikos, 122(6), pp.&nbsp;918-928. DOI: 10.1111/j.1600-0706.2012.20440.x.</p>
-<p>Efford, M.G. and Schofield, M.R. (2022). A review of movement models in open population capture-recapture. Methods in Ecology and Evolution, 13(10), pp.&nbsp;2106-2118. DOI: 10.1111/2041-210X.13947.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

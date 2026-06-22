@@ -165,7 +165,7 @@
     "href": "index.html#example-and-acre-package",
     "title": "Portfolio Quarto Website",
     "section": "Example and ACRE Package",
-    "text": "Example and ACRE Package\n\n\nExample with “secr” package\nLive Demo with the Ovenbird dataset.\n\n\nOverview of “acre”\nImportant notes on using this package for acoustics."
+    "text": "Example and ACRE Package\n\n\nExample with “secr” package\nLive Demo with the Ovenbird dataset. View more →\n\n\nOverview of “acre”\nImportant notes on using this package for acoustics.\nView more →"
   },
   {
     "objectID": "index.html#fitting-the-model",
@@ -194,5 +194,12 @@
     "title": "demotest",
     "section": "",
     "text": "## Load Data\n```{r} #| message: false #| warning: false library(secr) data(ovenbird) summary(ovenCH) ```"
+  },
+  {
+    "objectID": "testrun.html",
+    "href": "testrun.html",
+    "title": "testrun",
+    "section": "",
+    "text": "The example code from using one of the included datasets.\n\n\n\nExample R code"
   }
 ]

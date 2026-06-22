@@ -10,7 +10,7 @@ website:
       - href: about.qmd
         text: About
       - href: testrun.qmd
-        text: Demo
+        text: Example
 
 format:
   html:

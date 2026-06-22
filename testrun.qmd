@@ -2,5 +2,6 @@
 title: "testrun"
 editor: source
 ---
+The example code from using one of the included datasets. 
 
-TEST TEST
+![Example R code](democode.jpeg)

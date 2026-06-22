@@ -30,3 +30,6 @@ AIC(model1,model2)
 #density results
 summary(model1)
 predict(model1)
+
+
+
