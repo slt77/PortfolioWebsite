@@ -130,7 +130,7 @@
     "href": "about.html#academic-focus",
     "title": "About",
     "section": "Academic Focus",
-    "text": "Academic Focus\nSECR is the final stage of a project I am helping with from collected Gibbon spectograms, occurring after data processing, machine learning with CNNs and a shiny app.\nThis website will help you with the R package, SECR (spatially explicit capture-recapture), used in estimating animal abundances."
+    "text": "Academic Focus\nSECR is the final stage of a project I am helping with from collected Gibbon spectograms, occurring after data processing, machine learning with Convolutional Neural Networks and a Shiny app.\nThis website will help you with the R package, SECR (spatially explicit capture-recapture), used in estimating animal abundances."
   },
   {
     "objectID": "index.html#further-reading",
@@ -207,6 +207,6 @@
     "href": "Example.html",
     "title": "SECR Example",
     "section": "",
-    "text": "The example code from using one of the included datasets."
+    "text": "install and load packages → library(“secr”)\nlist all available datasets in the secr package → data(package = “secr”)\nload ovenbird data → data(ovenbird)\ninspect and plot capthist locations → summary(ovenbird) → plot(ovenCH, tracks = TRUE)\nview detectors → traps(ovenCH) → plot(traps(ovenCH))\nfit mask model → make.mask(traps(ovenCH)[[“2005”]],type = “trapbuffer”, buffer = 400, spacing = 15)\nfit multiple models\nAIC selection of models\nview density results\n\n\n\n\nThe above written as code with the output produced below."
   }
 ]

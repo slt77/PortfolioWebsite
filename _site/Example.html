@@ -140,8 +140,23 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The example code from using one of the included datasets.</p>
-<p><img src="democode.jpeg" class="img-fluid"></p>
+<ol type="1">
+<li><p>install and load packages → library(“secr”)</p></li>
+<li><p>list all available datasets in the secr package → data(package = “secr”)</p></li>
+<li><p>load ovenbird data → data(ovenbird)</p></li>
+<li><p>inspect and plot capthist locations → summary(ovenbird) → plot(ovenCH, tracks = TRUE)</p></li>
+<li><p>view detectors → traps(ovenCH) → plot(traps(ovenCH))</p></li>
+<li><p>fit mask model → make.mask(traps(ovenCH)[[“2005”]],type = “trapbuffer”, buffer = 400, spacing = 15)</p></li>
+<li><p>fit multiple models</p></li>
+<li><p>AIC selection of models</p></li>
+<li><p>view density results</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="democode.jpeg" class="img-fluid figure-img"></p>
+<figcaption>The above written as code with the output produced below.</figcaption>
+</figure>
+</div>
 
 
 
