@@ -19,11 +19,11 @@ traps(ovenCH)
 plot(traps(ovenCH))
 
 #mask & fit
-ovenmask <- make.mask(traps(ovenCH)[["2005"]],type = "trapbuffer", buffer = 400, spacing = 15)
+ovenmask -> make.mask(traps(ovenCH)[["2005"]],type = "trapbuffer", buffer = 400, spacing = 15)
 
 #fit model
-model1 <- secr.fit(ovenCH, mask = ovenmask, trace = FALSE)
-model2 <- secr.fit(ovenCH, mask = ovenmask, model = list(D ~ Session))
+model1 -> secr.fit(ovenCH, mask = ovenmask, trace = FALSE)
+model2 -> secr.fit(ovenCH, mask = ovenmask, model = list(D ~ Session))
 
 AIC(model1,model2)
 

@@ -10,7 +10,7 @@ Spatially Explicit Capture Recapture
 
 Estimate the density and size of spatially distributed animal populations from detector arrays via passive acoustic monitors (PAMs) and camera traps, using the maximum-likelihood.
 
-SECR models the detection locations and the histories of marked animals, allowing you to estimate population density and to fit a model to show how probability declines with distance from each detector, including spatial/temporal trends (Efford and Fewster, 2012).
+SECR models the detection locations and the histories of marked animals, allowing you to estimate population density and to fit a model to show how probability declines with distance from each detector, including spatial and temporal trends (Efford and Fewster, 2012).
 
 Detection functions describe the probability of detection as a given detector declines with distance (non-euclidean) from animals activity centre, the most commonly used is Half-Normal (HN) (Efford and Schofield, 2022).
 
@@ -36,14 +36,17 @@ SECR needs a traps object (detector locations) and a capthist object (detection 
 
 Detector types:
 
-| [Type]{.smallcaps} | [Description]{.smallcaps} | [Common Use]{.smallcaps} |
-|----|----|----|
-| single | Live trap - catches one animal per occasion | Small mammal pitfall |
-| multi | Live trap - catches multiple animals simultaneously | Box traps |
-| proximity | Presence without restricting movement | Camera traps, hair snags |
-| count | Proximity detector allowing more than one detection per occasion | Passive sensors |
-| signal | Detection with acoustic signal strength at each detector | Microphone arrays |
-| polygon | Searched area counts | Transect surveys |
+- single: a live trap that catches one animal per occasion used for small mammal pitfalls
+
+- multi: a live trap that catches multiple animals simultaneously, commonly used for box traps
+
+- proximity: presence without restricting movement for camera traps or hair snags
+
+- count: proximity detector allowing more than one detection per occasion for passive sensors
+
+- signal: detection with acoustic signal strength at each detector mainly for microphone arrays
+
+- polygon: searched area counts for transect surveys
 
 The capture history data needs to have the columns: session, animal ID, occasion and detector ID.
 

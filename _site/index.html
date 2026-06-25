@@ -158,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="secr-package">SECR Package</h2>
 <p>Spatially Explicit Capture Recapture</p>
 <p>Estimate the density and size of spatially distributed animal populations from detector arrays via passive acoustic monitors (PAMs) and camera traps, using the maximum-likelihood.</p>
-<p>SECR models the detection locations and the histories of marked animals, allowing you to estimate population density and to fit a model to show how probability declines with distance from each detector, including spatial/temporal trends (Efford and Fewster, 2012).</p>
+<p>SECR models the detection locations and the histories of marked animals, allowing you to estimate population density and to fit a model to show how probability declines with distance from each detector, including spatial and temporal trends (Efford and Fewster, 2012).</p>
 <p>Detection functions describe the probability of detection as a given detector declines with distance (non-euclidean) from animals activity centre, the most commonly used is Half-Normal (HN) (Efford and Schofield, 2022).</p>
 <ul>
 <li>Traps = detector coordinates &amp; type</li>
@@ -195,52 +195,14 @@ Note
 <h2 class="anchored" data-anchor-id="detectors-data">Detectors &amp; Data</h2>
 <p>SECR needs a traps object (detector locations) and a capthist object (detection histories). This can be done with a csv file, or from different types of detectors. Each detector type shows how the detection data is recorded and how the likelihood is constructed.</p>
 <p>Detector types:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 23%">
-<col style="width: 38%">
-<col style="width: 38%">
-</colgroup>
-<thead>
-<tr class="header">
-<th><span class="smallcaps">Type</span></th>
-<th><span class="smallcaps">Description</span></th>
-<th><span class="smallcaps">Common Use</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>single</td>
-<td>Live trap - catches one animal per occasion</td>
-<td>Small mammal pitfall</td>
-</tr>
-<tr class="even">
-<td>multi</td>
-<td>Live trap - catches multiple animals simultaneously</td>
-<td>Box traps</td>
-</tr>
-<tr class="odd">
-<td>proximity</td>
-<td>Presence without restricting movement</td>
-<td>Camera traps, hair snags</td>
-</tr>
-<tr class="even">
-<td>count</td>
-<td>Proximity detector allowing more than one detection per occasion</td>
-<td>Passive sensors</td>
-</tr>
-<tr class="odd">
-<td>signal</td>
-<td>Detection with acoustic signal strength at each detector</td>
-<td>Microphone arrays</td>
-</tr>
-<tr class="even">
-<td>polygon</td>
-<td>Searched area counts</td>
-<td>Transect surveys</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li><p>single: a live trap that catches one animal per occasion used for small mammal pitfalls</p></li>
+<li><p>multi: a live trap that catches multiple animals simultaneously, commonly used for box traps</p></li>
+<li><p>proximity: presence without restricting movement for camera traps or hair snags</p></li>
+<li><p>count: proximity detector allowing more than one detection per occasion for passive sensors</p></li>
+<li><p>signal: detection with acoustic signal strength at each detector mainly for microphone arrays</p></li>
+<li><p>polygon: searched area counts for transect surveys</p></li>
+</ul>
 <p>The capture history data needs to have the columns: session, animal ID, occasion and detector ID.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
