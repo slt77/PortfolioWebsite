@@ -137,7 +137,7 @@
     "href": "index.html#further-reading",
     "title": "Portfolio Quarto Website",
     "section": "Further Reading",
-    "text": "Further Reading\nFor SECR visit the GitHub page of the creator, Murray Efford\nFor ACRE visit the GitHub page of the creator, Ben Stephenson"
+    "text": "Further Reading\nFor SECR visit the GitHub page of the creator, Murray Efford\nFor ACRE visit the GitHub page of the creator, Ben Stephenson\nTo read more about acoustic spatial recapture:\nReid, D.S., Wood. C. M., Whitmore, S.A., Berigan, W.J., Keane, J.J., Sawyer, S.C., Shaklee, P.A., Kramer, H.A., Kelly, K.G., Reiss, A. and Kryshak, N. (2021). Noisy neighbours and reticent resident: Distinguishing resident from non-resident individuals to improve passive acoustic monitoring. Global Ecology and Conservation, 28(1). DOI: 10.1016/j.gecco.2021.e01710.\nBivand, R. (2022). R Packages for Analyzing Spatial Data: A Comparative Case Study with Areal Data. Geographical Analysis, 54(3), pp.488-518. DOI: 10.1111/gean.12319."
   },
   {
     "objectID": "index.html#detectors-data",
@@ -158,14 +158,14 @@
     "href": "index.html#microphone-arrays-signal-strength",
     "title": "Portfolio Quarto Website",
     "section": "Microphone Arrays & Signal Strength",
-    "text": "Microphone Arrays & Signal Strength\nSignal strength detectors record a binary detection to improve the accuracy and precisions of locations, measured in dB level. The detector type must be changed to signal.\n\n\n\nModel validation\n\n\n\nbeta0 = source level at 1m\nbeta1 = attenuation slope (dB/m)\n\n\n\n\n\n\n\nNote\n\n\n\nFor acoustic data the acre package can be used instead of secr, this allows for more efficient data analysis due to being created specifically for acoustics. See below"
+    "text": "Microphone Arrays & Signal Strength\nSignal strength detectors record a binary detection to improve the accuracy and precision of locations, measured in dB level. The detector type must be changed to signal.\n\n\n\nModel validation\n\n\n\nbeta0 = source level at 1m\nbeta1 = attenuation slope (dB/m)\n\n\n\n\n\n\n\nNote\n\n\n\nFor acoustic data the acre package can be used instead of secr, this allows for more efficient data analysis due to being created specifically for acoustics. See below"
   },
   {
     "objectID": "index.html#example-and-acre-package",
     "href": "index.html#example-and-acre-package",
     "title": "Portfolio Quarto Website",
     "section": "Example and ACRE Package",
-    "text": "Example and ACRE Package\n\n\nExample with “secr” package\nLive Demo with the Ovenbird dataset.\nView →\n\n\nOverview of “acre”\nImportant notes on using this package for acoustics."
+    "text": "Example and ACRE Package\n\n\nExample with “secr” package\nLive Demo with the Ovenbird dataset.\nView →\n\n\nOverview of “acre”\n\nAcre has a similar framework to the secr package\nUses microphone arrays instead of traps\nHandles imperfect detection and uses habitat masks (where animals can occur)\nModels detection probability of animal calls across a sensor array to estimate call and animal density"
   },
   {
     "objectID": "index.html#fitting-the-model",
@@ -207,6 +207,6 @@
     "href": "Example.html",
     "title": "SECR Example",
     "section": "",
-    "text": "install and load packages → library(“secr”)\nlist all available datasets in the secr package → data(package = “secr”)\nload ovenbird data → data(ovenbird)\ninspect and plot capthist locations → summary(ovenbird) → plot(ovenCH, tracks = TRUE)\nview detectors → traps(ovenCH) → plot(traps(ovenCH))\nfit mask model → make.mask(traps(ovenCH)[[“2005”]],type = “trapbuffer”, buffer = 400, spacing = 15)\nfit multiple models\nAIC selection of models\nview density results\n\n\n\n\nThe above written as code with the output produced below."
+    "text": "Install and load packages → library(“secr”)\nList all available datasets in the secr package → data(package = “secr”)\nLoad ovenbird data → data(ovenbird)\nInspect and plot capthist locations → summary(ovenbird) → plot(ovenCH, tracks = TRUE)\nView detectors → traps(ovenCH) → plot(traps(ovenCH))\nFit mask model → make.mask(traps(ovenCH)[[“2005”]],type = “trapbuffer”, buffer = 400, spacing = 15)\nFit multiple models\nAIC selection of models\nView density results\n\n\n\n\nThe above written as code with the output produced below."
   }
 ]

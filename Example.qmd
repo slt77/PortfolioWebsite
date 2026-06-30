@@ -24,3 +24,12 @@ editor: source
 9. View density results 
 
 ![The above written as code with the output produced below.](democode.jpeg)
+
+
+Below are the final plots and metrics that should be produced:
+
+![A map of the capture history locations.](firstplot.jpeg)
+
+
+![AIC values.](aicvalues.jpg)
+![Final abundance values for 2009.](abundvalues.jpeg)

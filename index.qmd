@@ -82,7 +82,7 @@ Common predictors are **bk** (behavioral response), **t** (temporal variation) a
 
 ## Microphone Arrays & Signal Strength
 
-Signal strength detectors record a binary detection to improve the accuracy and precisions of locations, measured in dB level. The detector type must be changed to signal.
+Signal strength detectors record a binary detection to improve the accuracy and precision of locations, measured in dB level. The detector type must be changed to signal.
 
 ![Model validation](miccode.jpg)
 
@@ -101,7 +101,7 @@ For acoustic data the **acre** package can be used instead of secr, this allows 
 ::: g-col-6
 ### Example with "secr" package
 
-Live Demo with the Ovenbird dataset.
+Worked example with the Ovenbird dataset.
 
 [View →](Example.qmd)
 :::
@@ -109,17 +109,32 @@ Live Demo with the Ovenbird dataset.
 ::: g-col-6
 ### Overview of "acre"
 
-Important notes on using this package for acoustics.
+- Acre has a similar framework to secr
+
+- Uses microphone arrays instead of traps
+
+- Handles imperfect detection and uses habitat masks (where animals can occur)
+
+- Models detection probability of animal calls across a sensor array to estimate call and animal density
+
+  ------------------------------------------------------------------------
 :::
 :::::
-
-------------------------------------------------------------------------
 
 ## Further Reading
 
 For SECR visit the GitHub page of the creator, [Murray Efford](https://github.com/MurrayEfford/secr/)
 
 For ACRE visit the GitHub page of the creator, [Ben Stephenson](https://github.com/b-steve/acre)
+
+To read more about acoustic spatial recapture:
+
+Reid, D.S., Wood. C. M., Whitmore, S.A., Berigan, W.J., Keane, J.J., Sawyer, S.C., Shaklee, P.A., Kramer, H.A., Kelly, K.G., Reiss, A. and Kryshak, N. (2021). Noisy neighbours and reticent resident: Distinguishing resident from non-resident individuals to improve passive acoustic monitoring. *Global Ecology and Conservation*, 28(1). DOI: 10.1016/j.gecco.2021.e01710.
+[Article 1 →](https://www.sciencedirect.com/science/article/pii/S2351989421002602)
+
+Bivand, R. (2022). R Packages for Analyzing Spatial Data: A Comparative Case Study with Areal Data. *Geographical Analysis*, 54(3), pp.488-518. DOI: 10.1111/gean.12319.
+[Article 2 →](https://onlinelibrary.wiley.com/doi/full/10.1111/gean.12319)
+
 
 ## References
 

@@ -255,7 +255,7 @@ Note
 </section>
 <section id="microphone-arrays-signal-strength" class="level2">
 <h2 class="anchored" data-anchor-id="microphone-arrays-signal-strength">Microphone Arrays &amp; Signal Strength</h2>
-<p>Signal strength detectors record a binary detection to improve the accuracy and precisions of locations, measured in dB level. The detector type must be changed to signal.</p>
+<p>Signal strength detectors record a binary detection to improve the accuracy and precision of locations, measured in dB level. The detector type must be changed to signal.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="miccode.jpg" class="img-fluid figure-img"></p>
@@ -291,15 +291,23 @@ Note
 </section>
 <section id="overview-of-acre" class="level3 g-col-6">
 <h3 class="anchored" data-anchor-id="overview-of-acre">Overview of “acre”</h3>
-<p>Important notes on using this package for acoustics.</p>
+<ul>
+<li><p>Acre has a similar framework to the secr package</p></li>
+<li><p>Uses microphone arrays instead of traps</p></li>
+<li><p>Handles imperfect detection and uses habitat masks (where animals can occur)</p></li>
+<li><p>Models detection probability of animal calls across a sensor array to estimate call and animal density</p>
+<hr></li>
+</ul>
 </section>
 </div>
-<hr>
 </section>
 <section id="further-reading" class="level2">
 <h2 class="anchored" data-anchor-id="further-reading">Further Reading</h2>
 <p>For SECR visit the GitHub page of the creator, <a href="https://github.com/MurrayEfford/secr/">Murray Efford</a></p>
 <p>For ACRE visit the GitHub page of the creator, <a href="https://github.com/b-steve/acre">Ben Stephenson</a></p>
+<p>To read more about acoustic spatial recapture:</p>
+<p>Reid, D.S., Wood. C. M., Whitmore, S.A., Berigan, W.J., Keane, J.J., Sawyer, S.C., Shaklee, P.A., Kramer, H.A., Kelly, K.G., Reiss, A. and Kryshak, N. (2021). Noisy neighbours and reticent resident: Distinguishing resident from non-resident individuals to improve passive acoustic monitoring. <em>Global Ecology and Conservation</em>, 28(1). DOI: 10.1016/j.gecco.2021.e01710.</p>
+<p>Bivand, R. (2022). R Packages for Analyzing Spatial Data: A Comparative Case Study with Areal Data. <em>Geographical Analysis</em>, 54(3), pp.488-518. DOI: 10.1111/gean.12319.</p>
 </section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>

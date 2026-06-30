@@ -31,5 +31,5 @@ AIC(model1,model2)
 summary(model1)
 predict(model1)
 
-
-
+#abundance values
+region.N(model1)
