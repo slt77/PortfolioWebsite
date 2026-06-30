@@ -137,7 +137,7 @@
     "href": "index.html#further-reading",
     "title": "Portfolio Quarto Website",
     "section": "Further Reading",
-    "text": "Further Reading\nFor SECR visit the GitHub page of the creator, Murray Efford\nFor ACRE visit the GitHub page of the creator, Ben Stephenson\nTo read more about acoustic spatial recapture:\nReid, D.S., Wood. C. M., Whitmore, S.A., Berigan, W.J., Keane, J.J., Sawyer, S.C., Shaklee, P.A., Kramer, H.A., Kelly, K.G., Reiss, A. and Kryshak, N. (2021). Noisy neighbours and reticent resident: Distinguishing resident from non-resident individuals to improve passive acoustic monitoring. Global Ecology and Conservation, 28(1). DOI: 10.1016/j.gecco.2021.e01710.\nBivand, R. (2022). R Packages for Analyzing Spatial Data: A Comparative Case Study with Areal Data. Geographical Analysis, 54(3), pp.488-518. DOI: 10.1111/gean.12319."
+    "text": "Further Reading\nFor SECR visit the GitHub page of the creator, Murray Efford\nFor ACRE visit the GitHub page of the creator, Ben Stephenson\nTo read more about acoustic spatial recapture:\nReid, D.S., Wood. C. M., Whitmore, S.A., Berigan, W.J., Keane, J.J., Sawyer, S.C., Shaklee, P.A., Kramer, H.A., Kelly, K.G., Reiss, A. and Kryshak, N. (2021). Noisy neighbours and reticent resident: Distinguishing resident from non-resident individuals to improve passive acoustic monitoring. Global Ecology and Conservation, 28(1). DOI: 10.1016/j.gecco.2021.e01710. Article 1 →\nBivand, R. (2022). R Packages for Analyzing Spatial Data: A Comparative Case Study with Areal Data. Geographical Analysis, 54(3), pp.488-518. DOI: 10.1111/gean.12319. Article 2 →"
   },
   {
     "objectID": "index.html#detectors-data",
@@ -165,7 +165,7 @@
     "href": "index.html#example-and-acre-package",
     "title": "Portfolio Quarto Website",
     "section": "Example and ACRE Package",
-    "text": "Example and ACRE Package\n\n\nExample with “secr” package\nLive Demo with the Ovenbird dataset.\nView →\n\n\nOverview of “acre”\n\nAcre has a similar framework to the secr package\nUses microphone arrays instead of traps\nHandles imperfect detection and uses habitat masks (where animals can occur)\nModels detection probability of animal calls across a sensor array to estimate call and animal density"
+    "text": "Example and ACRE Package\n\n\nExample with “secr” package\nWorked example with the Ovenbird dataset.\nView →\n\n\nOverview of “acre”\n\nAcre has a similar framework to secr\nUses microphone arrays instead of traps\nHandles imperfect detection and uses habitat masks (where animals can occur)\nModels detection probability of animal calls across a sensor array to estimate call and animal density"
   },
   {
     "objectID": "index.html#fitting-the-model",

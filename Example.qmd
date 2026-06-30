@@ -32,4 +32,4 @@ Below are the final plots and metrics that should be produced:
 
 
 ![AIC values.](aicvalues.jpg)
-![Final abundance values for 2009.](abundvalues.jpeg)
+![Final abundance values for 2009.](abundvalues.jpeg) 

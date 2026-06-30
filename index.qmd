@@ -130,10 +130,10 @@ For ACRE visit the GitHub page of the creator, [Ben Stephenson](https://github.c
 To read more about acoustic spatial recapture:
 
 Reid, D.S., Wood. C. M., Whitmore, S.A., Berigan, W.J., Keane, J.J., Sawyer, S.C., Shaklee, P.A., Kramer, H.A., Kelly, K.G., Reiss, A. and Kryshak, N. (2021). Noisy neighbours and reticent resident: Distinguishing resident from non-resident individuals to improve passive acoustic monitoring. *Global Ecology and Conservation*, 28(1). DOI: 10.1016/j.gecco.2021.e01710.
-[Article 1 →](https://www.sciencedirect.com/science/article/pii/S2351989421002602)
+[→ Article 1](https://www.sciencedirect.com/science/article/pii/S2351989421002602)
 
 Bivand, R. (2022). R Packages for Analyzing Spatial Data: A Comparative Case Study with Areal Data. *Geographical Analysis*, 54(3), pp.488-518. DOI: 10.1111/gean.12319.
-[Article 2 →](https://onlinelibrary.wiley.com/doi/full/10.1111/gean.12319)
+[→ Article 2](https://onlinelibrary.wiley.com/doi/full/10.1111/gean.12319)
 
 
 ## References
