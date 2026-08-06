@@ -21,7 +21,7 @@ learning and transfer Learning for classification in acoustic spectograms.
 
 ## Academic Focus
 
-SECR is the final stage of a project I am helping with from collected Gibbon spectograms, occurring after data processing, machine learning with Convolutional Neural Networks  and a Shiny app. 
+SECR is the final stage of a project I am helping with from collected Gibbon spectograms, occurring after data processing, machine learning with Convolutional Neural Networks (CNNs) and a Shiny app. 
 
 This website will help you with the R package, SECR (spatially explicit capture-recapture), used in estimating animal abundances.
 
