@@ -46,7 +46,7 @@
     "href": "index.html#references",
     "title": "Portfolio Quarto Website",
     "section": "References",
-    "text": "References\nClink, D.J., Zafar, M., Ahmad, A.H. and Lau, A.R. (2021). Limited Evidence for Individual Signatures or Site-Level Patterns pf Variation in Male Northern Gray Gibbon (Hylobates funereus) Duet Codas. International Journal of Primatology, 42(12), pp:1-19. DOI: 10.1007/s10764-021-00250-2.\nEfford, M.G. and Fewster, R.M. (2012). Estimating population size by spatially explicit capture-recapture. Oikos, 122(6), pp. 918-928. DOI: 10.1111/j.1600-0706.2012.20440.x.\nEfford, M.G. and Schofield, M.R. (2022). A review of movement models in open population capture-recapture. Methods in Ecology and Evolution, 13(10), pp. 2106-2118. DOI: 10.1111/2041-210X.13947."
+    "text": "References\nClink, D.J., Zafar, M., Ahmad, A.H. and Lau, A.R. (2021). Limited Evidence for Individual Signatures or Site-Level Patterns pf Variation in Male Northern Gray Gibbon (Hylobates funereus) Duet Codas. International Journal of Primatology, 42(12), pp:1-19. DOI: 10.1007/s10764-021-00250-2.\nEfford, M.G. and Fewster, R.M. (2012). Estimating population size by spatially explicit capture-recapture. Oikos, 122(6), pp. 918-928. DOI: 10.1111/j.1600-0706.2012.20440.x.\nEfford, M.G. and Schofield, M.R. (2022). A review of movement models in open population capture-recapture. Methods in Ecology and Evolution, 13(10), pp. 2106-2118. DOI: 10.1111/2041-210X.13947.\nGreen, A.M., Chynoweth, M.W. and Şekercioğlu, Ç.H. (2020). Spatially explicit capture-recapture through camera trapping: a review of benchmark analyses for wildlife density estimation. Frontiers in Ecology and Evolution, 8, p.563477. DOI:10.3389/fevo.2020.563477."
   },
   {
     "objectID": "about.html",
@@ -137,14 +137,14 @@
     "href": "index.html#further-reading",
     "title": "Portfolio Quarto Website",
     "section": "Further Reading",
-    "text": "Further Reading\nFor SECR visit the GitHub page of the creator, Murray Efford\nFor ACRE visit the GitHub page of the creator, Ben Stephenson\nTo read more about acoustic spatial recapture:\nReid, D.S., Wood. C. M., Whitmore, S.A., Berigan, W.J., Keane, J.J., Sawyer, S.C., Shaklee, P.A., Kramer, H.A., Kelly, K.G., Reiss, A. and Kryshak, N. (2021). Noisy neighbours and reticent resident: Distinguishing resident from non-resident individuals to improve passive acoustic monitoring. Global Ecology and Conservation, 28(1). DOI: 10.1016/j.gecco.2021.e01710. Article 1 →\nBivand, R. (2022). R Packages for Analyzing Spatial Data: A Comparative Case Study with Areal Data. Geographical Analysis, 54(3), pp.488-518. DOI: 10.1111/gean.12319. Article 2 →"
+    "text": "Further Reading\nFor SECR visit the GitHub page of the creator, Murray Efford\nFor ACRE visit the GitHub page of the creator, Ben Stephenson\nTo read more about acoustic spatial recapture:\nReid, D.S., Wood. C. M., Whitmore, S.A., Berigan, W.J., Keane, J.J., Sawyer, S.C., Shaklee, P.A., Kramer, H.A., Kelly, K.G., Reiss, A. and Kryshak, N. (2021). Noisy neighbours and reticent resident: Distinguishing resident from non-resident individuals to improve passive acoustic monitoring. Global Ecology and Conservation, 28(1). DOI: 10.1016/j.gecco.2021.e01710. → Article 1\nBivand, R. (2022). R Packages for Analyzing Spatial Data: A Comparative Case Study with Areal Data. Geographical Analysis, 54(3), pp.488-518. DOI: 10.1111/gean.12319. → Article 2"
   },
   {
     "objectID": "index.html#detectors-data",
     "href": "index.html#detectors-data",
     "title": "Portfolio Quarto Website",
     "section": "Detectors & Data",
-    "text": "Detectors & Data\nSECR needs a traps object (detector locations) and a capthist object (detection histories). This can be done with a csv file, or from different types of detectors. Each detector type shows how the detection data is recorded and how the likelihood is constructed.\nDetector types:\n\nsingle: a live trap that catches one animal per occasion used for small mammal pitfalls\nmulti: a live trap that catches multiple animals simultaneously, commonly used for box traps\nproximity: presence without restricting movement for camera traps or hair snags\ncount: proximity detector allowing more than one detection per occasion for passive sensors\nsignal: detection with acoustic signal strength at each detector mainly for microphone arrays\npolygon: searched area counts for transect surveys\n\nThe capture history data needs to have the columns: session, animal ID, occasion and detector ID.\n\n\n\n\n\n\nNote\n\n\n\nAnimal IDs must be unique within a session. Otherwise use multi-season capthist objects.\n\n\nA mask is a grid of habitat points extending beyond the detector array, covering all activity centres.\n\n\n\nDetector Location code"
+    "text": "Detectors & Data\nSECR needs a traps object (detector locations) and a capthist object (detection histories) (Green, Chynoweth, and Şekercioğlu, 2020). This can be done with a csv file, or from different types of detectors. Each detector type shows how the detection history data is recorded and how the likelihood is constructed (Efford and Schofield, 2022).\nDetector types:\n\nsingle: a live trap that catches one animal per occasion used for small mammal pitfalls\nmulti: a live trap that catches multiple animals simultaneously, commonly used for box traps\nproximity: presence without restricting movement for camera traps or hair snags\ncount: proximity detector allowing more than one detection per occasion for passive sensors\nsignal: detection with acoustic signal strength at each detector mainly for microphone arrays\npolygon: searched area counts for transect surveys\n\nThe capture history data needs to have the columns: session, animal ID, occasion and detector ID.\n\n\n\n\n\n\nNote\n\n\n\nAnimal IDs must be unique within a session. Otherwise use multi-season capthist objects.\n\n\nA mask is a grid of habitat points extending beyond the detector array, covering all activity centres (Efford and Schofield, 2022).\n\n\n\nDetector Location code"
   },
   {
     "objectID": "index.html#secr.fit-and-model-selection",
@@ -172,14 +172,14 @@
     "href": "index.html#fitting-the-model",
     "title": "Portfolio Quarto Website",
     "section": "Fitting the Model",
-    "text": "Fitting the Model\nMost models are fitted with the default half-normal (HN) detector. Multiple models are created with different covariates, to find the optimal model. The three principal parameters are D (density), g0 (baseline detection probability at distance 0) and sigma (spatial scale of detection function in metres). First start with a baseline model, then add covariates and compare models.\n\n\n\nFitting the model code\n\n\nCommon predictors are bk (behavioral response), t (temporal variation) and Sex (individual covariate)."
+    "text": "Fitting the Model\nMost models are fitted with the default half-normal (HN) detector (Green, Chynoweth, and Şekercioğlu, 2020). Multiple models are created with different covariates, to find the optimal model. The three principal parameters are D (density), g0 (baseline detection probability at distance 0) and sigma (spatial scale of detection function in metres) (Efford and Schofield, 2022). First start with a baseline model, then add covariates and compare models.\n\n\n\nFitting the model code\n\n\nPotential predictor covariates may be bk (behavioral response), t (temporal variation) and Sex (individual covariate)."
   },
   {
     "objectID": "index.html#model-validation-selection",
     "href": "index.html#model-validation-selection",
     "title": "Portfolio Quarto Website",
     "section": "Model Validation & Selection",
-    "text": "Model Validation & Selection\n\nInspect parameter estimates → predict(fit0) with 95% confidence intervals\nModel Comparison → AIC(fit0, fit1)\nDensity estimates → region.N(fit0)\n\n\n\n\nModel validation"
+    "text": "Model Validation & Selection\n\nInspect parameter estimates → predict(fit0) with 95% confidence intervals\nModel Comparison → AIC(fit0, fit1) (Efford and Schofield, 2022)\nDensity estimates → region.N(fit0)\n\n\n\n\nModel validation"
   },
   {
     "objectID": "demo.test.html",
@@ -207,6 +207,6 @@
     "href": "Example.html",
     "title": "SECR Example",
     "section": "",
-    "text": "Install and load packages → library(“secr”)\nList all available datasets in the secr package → data(package = “secr”)\nLoad ovenbird data → data(ovenbird)\nInspect and plot capthist locations → summary(ovenbird) → plot(ovenCH, tracks = TRUE)\nView detectors → traps(ovenCH) → plot(traps(ovenCH))\nFit mask model → make.mask(traps(ovenCH)[[“2005”]],type = “trapbuffer”, buffer = 400, spacing = 15)\nFit multiple models\nAIC selection of models\nView density results\n\n\n\n\nThe above written as code with the output produced below."
+    "text": "Install and load packages → library(“secr”)\nList all available datasets in the secr package → data(package = “secr”)\nLoad ovenbird data → data(ovenbird)\nInspect and plot capthist locations → summary(ovenbird) → plot(ovenCH, tracks = TRUE)\nView detectors → traps(ovenCH) → plot(traps(ovenCH))\nFit mask model → make.mask(traps(ovenCH)[[“2005”]],type = “trapbuffer”, buffer = 400, spacing = 15)\nFit multiple models\nAIC selection of models\nView density results\n\n\n\n\nThe above written as code with the output produced below.\n\n\nBelow are the final plots and metrics that should be produced:\n\n\n\nA map of the capture history locations."
   }
 ]

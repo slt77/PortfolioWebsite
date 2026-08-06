@@ -19,7 +19,7 @@ Detection functions describe the probability of detection as a given detector de
 - mask = habitat grid for the likelihood
 
 ::: callout-note
-The **secr** R package assumes the population is *closed* during the sampling period so there is no movement out of the area - no births, deaths, immigration or emigration occurs (Efford and Schofield, 2022).
+The **secr** R package assumes the population is **closed** during the sampling period so there is no movement out of the area - no births, deaths, immigration or emigration occurs (Efford and Schofield, 2022).
 :::
 
 1.  First install the package from CRAN
@@ -32,7 +32,7 @@ The **secr** R package assumes the population is *closed* during the sampling pe
 
 ## Detectors & Data
 
-SECR needs a traps object (detector locations) and a capthist object (detection histories). This can be done with a csv file, or from different types of detectors. Each detector type shows how the detection data is recorded and how the likelihood is constructed.
+SECR needs a traps object (detector locations) and a capthist object (detection histories) (Green, Chynoweth, and Şekercioğlu, 2020). This can be done with a csv file, or from different types of detectors. Each detector type shows how the detection history data is recorded and how the likelihood is constructed (Efford and Schofield, 2022).
 
 Detector types:
 
@@ -54,7 +54,7 @@ The capture history data needs to have the columns: session, animal ID, occasion
 Animal IDs must be **unique** within a session. Otherwise use multi-season capthist objects.
 :::
 
-A mask is a grid of habitat points extending beyond the detector array, covering all activity centres.
+A mask is a grid of habitat points extending beyond the detector array, covering all activity centres (Efford and Schofield, 2022).
 
 ![Detector Location code](code2.jpg)
 
@@ -62,18 +62,20 @@ A mask is a grid of habitat points extending beyond the detector array, covering
 
 ## Fitting the Model
 
-Most models are fitted with the default half-normal (HN) detector. Multiple models are created with different covariates, to find the optimal model. The three principal parameters are D (density), g0 (baseline detection probability at distance 0) and sigma (spatial scale of detection function in metres). First start with a baseline model, then add covariates and compare models.
+Most models are fitted with the default half-normal (HN) detector (Green, Chynoweth, and Şekercioğlu, 2020). Multiple models are created with different covariates, to find the optimal model. 
+The three principal parameters are D (density), g0 (baseline detection probability at distance 0) and sigma (spatial scale of detection function in metres) (Efford and Schofield, 2022). 
+First start with a baseline model, then add covariates and compare models.
 
 ![Fitting the model code](codefit.jpg)
 
-Common predictors are **bk** (behavioral response), **t** (temporal variation) and **Sex** (individual covariate).
+Potential predictor covariates may be **bk** (behavioral response), **t** (temporal variation) and **Sex** (individual covariate).
 
 ------------------------------------------------------------------------
 
 ## Model Validation & Selection
 
 - Inspect parameter estimates → predict(fit0) with 95% confidence intervals
-- Model Comparison → AIC(fit0, fit1)
+- Model Comparison → AIC(fit0, fit1) (Efford and Schofield, 2022)
 - Density estimates → region.N(fit0)
 
 ![Model validation](codeaic.jpg)
@@ -82,7 +84,7 @@ Common predictors are **bk** (behavioral response), **t** (temporal variation) a
 
 ## Microphone Arrays & Signal Strength
 
-Signal strength detectors record a binary detection to improve the accuracy and precision of locations, measured in dB level. The detector type must be changed to signal.
+Signal strength detectors record a binary detection to improve the accuracy and precision of locations, measured in dB level, the detector type must be changed to signal (Stevenson *et al.*, 2015).
 
 ![Model validation](miccode.jpg)
 
@@ -138,8 +140,10 @@ Bivand, R. (2022). R Packages for Analyzing Spatial Data: A Comparative Case Stu
 
 ## References
 
-Clink, D.J., Zafar, M., Ahmad, A.H. and Lau, A.R. (2021). Limited Evidence for Individual Signatures or Site-Level Patterns pf Variation in Male Northern Gray Gibbon (Hylobates funereus) Duet Codas. International Journal of Primatology, 42(12), pp:1-19. DOI: 10.1007/s10764-021-00250-2.
-
 Efford, M.G. and Fewster, R.M. (2012). Estimating population size by spatially explicit capture-recapture. Oikos, 122(6), pp. 918-928. DOI: 10.1111/j.1600-0706.2012.20440.x.
 
 Efford, M.G. and Schofield, M.R. (2022). A review of movement models in open population capture-recapture. Methods in Ecology and Evolution, 13(10), pp. 2106-2118. DOI: 10.1111/2041-210X.13947.
+
+Green, A.M., Chynoweth, M.W. and Şekercioğlu, Ç.H. (2020). Spatially explicit capture-recapture through camera trapping: a review of benchmark analyses for wildlife density estimation. Frontiers in Ecology and Evolution, 8, p.563477. DOI:10.3389/fevo.2020.563477.
+
+Stevenson, B.C., Borchers, D.L., Altwegg, R., Swift, R.J., Gillespie, D.M. and Measey, G.J. (2015). A general framework for animal density estimation from acoustic detections across a fixed microphone array. Methods in Ecology and Evolution, 6(1), pp.38-48. DOI:10.1080/01621459.2014.893884

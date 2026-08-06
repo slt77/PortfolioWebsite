@@ -7,10 +7,10 @@ title: "About"
 :::: {layout-ncol=2}
 
 ::: {}
-Hello, I am Sara L. Thomas.
+Hello, I am Sara Lois Thomas.
 
 I am an MSc Statistical Ecology student at the University of St Andrews currently working on machine 
-learning techniques for identification and categorisation in acoustic spectograms.
+learning and transfer Learning for classification in acoustic spectograms.
 :::
 
 ::: {}
